@@ -4,11 +4,30 @@ layout: default
 
 <div class="home">
 
+  <!-- {{ 'now' | date: '%Y-%m-%d %H:%M:%S' }} -->
+
   <div class="main-logo">
     <img id="logo" class="logo" src="{{ "assets/10an-logo-final.svg" | relative_url }}" />
   </div>
 
   {{ content }}
 
+
+  <h1>
+    Framkvæmd keppninnar
+  </h1>
+  <div class="timeline">
+    {%- for event in page.timeline -%}
+    <div class="tl-event">
+      <div class="tl-date"><span>{{ event.start }}</span> - <span>{{ event.end }}</span></div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-title"><h3>{{ event.name }}</h3></div>
+      <div class="tl-line"></div>
+      <div class="tl-content">
+        {{ event.description | markdownify }}
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
 
 </div>
