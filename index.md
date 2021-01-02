@@ -51,7 +51,7 @@ að vekja áhuga á netöryggi um alla Evrópu auk þess að efla þekkingu og �
 Það þarf ekki að liggja lengi yfir fréttamiðlum samtímans til að átta sig
 á mikilvægi tölvuöryggis í nútímasamfélagi. Reglulega birtast fréttir af
 fyrirtækjum og einstaklingum verða af háum fjárhæðum vegna netárása og jafnvel
-tölvuinnbrot framkvæmd af ríkjum með það að markmiði.
+tölvuinnbrot framkvæmd af ríkjum með það að markmiði að njósna um önnur ríki.
 
 Þrátt fyrir mikilvægi netöryggis, þá skortir ennþá hæfileikaríkt fólk
 til að takast á við þær áskoranir sem því fylgja. Af þessari ástæðu setti
