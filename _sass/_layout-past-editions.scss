@@ -1,0 +1,89 @@
+/**
+ * Past editions
+ */
+
+.post {
+  h1 {
+    @include relative-font-size(2.3);
+  }
+
+  .winners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .winner-list {
+      padding: 20px 40px;
+      margin: 20px;
+      border-radius: 10px;
+      background-color: #222222;
+      flex: 1 0 auto;
+
+      .placement {
+        @include relative-font-size(1.1);
+        padding: 2px 0;
+        &:nth-child(2) {
+          font-weight: bold,
+        }
+
+        span {
+          @include relative-font-size(0.8);
+          padding-left: 2px;
+          font-weight: normal,
+        }
+      }
+    }
+  }
+
+
+  .participants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .participant-list {
+      padding: 20px 60px 20px 40px;
+      margin: 20px;
+      background-color: #222222;
+      border-radius: 10px;
+      flex: 1 0 auto;
+
+      ul {
+        list-style-type: none;
+        margin-inline-start: 0;
+
+        li {
+          margin: 1px 0;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 200px;
+      margin: 5px;
+
+      &:hover
+      {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .credits {
+    margin-top: 20px;
+
+    span {
+      font-style: italic;
+    }
+
+
+    @include relative-font-size(0.8);
+  }
+
+}

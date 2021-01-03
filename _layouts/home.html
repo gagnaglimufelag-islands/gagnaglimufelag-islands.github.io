@@ -13,13 +13,35 @@ layout: default
   {{ content }}
 
 
+  {% assign featured = site.posts | where_exp: "x", "x.featured" %}
+  {%- if featured.size > 0 -%}
+    <h1>
+      Hvað er að gerast núna?
+    </h1>
+
+    {% include post_list.html posts=featured %}
+
+    <div class="more-news">
+      <a href="{{ "/news/" | relative_url }}">
+      Eldri fréttir
+      </a>
+    </div>
+
+  {%- endif -%}
+
   <h1>
     Framkvæmd keppninnar
   </h1>
   <div class="timeline">
     {%- for event in page.timeline -%}
-    <div class="tl-event">
-      <div class="tl-date"><span>{{ event.start }}</span> - <span>{{ event.end }}</span></div>
+    <div class="tl-event" data-start="{{ event.start }}" data-end="{{ event.end }}">
+      <div class="tl-date">
+        {% assign start_month = event.start | date: "%m" | minus: "1" %}
+        <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}</span>
+        -
+        {% assign end_month = event.end | date: "%m" | minus: "1" %}
+        <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}</span>
+      </div>
       <div class="tl-line"><div class="tl-dot"></div></div>
       <div class="tl-title"><h3>{{ event.name }}</h3></div>
       <div class="tl-line"></div>
@@ -29,5 +51,23 @@ layout: default
     </div>
     {%- endfor -%}
   </div>
+
+  <script>
+    let now = new Date().setHours(0,0,0,0);
+    document.querySelectorAll(".tl-event").forEach(event => {
+      let start = Date.parse(event.dataset.start);
+      let end = Date.parse(event.dataset.end);
+
+      let cls = '';
+      if (start <= now && now <= end) {
+        cls = 'ongoing';
+      } else if (now > end) {
+        cls = 'finished';
+      }
+      if (cls) {
+        event.classList.add(cls);
+      }
+    })
+  </script>
 
 </div>

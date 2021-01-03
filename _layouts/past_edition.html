@@ -1,0 +1,103 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" integrity="sha512-ih6Xht3ics+Ewow1rR+nSCuWB1Xm3Mul7o+PR71VK6mQ7IWUgypDUo0zEQTUnk717zH6VhvqVCcKLQVGzuE4mQ==" crossorigin="anonymous" />
+
+<article class="post h-entry">
+
+  <header class="post-header">
+    <h1 class="post-title p-name">{{ page.title | escape }} {{ page.year }}</h1>
+  </header>
+
+  <div class="post-content e-content">
+    {{ content }}
+  </div>
+
+  {%- if page.winners -%}
+    <h2>Sigurvegarar</h2>
+  {%- endif -%}
+
+  {% assign medals = "🥇🥈🥉" %}
+  <div class="winners">
+    <div class="winner-list">
+      <h3>Yngri flokkur</h3>
+        {% for p in page.winners.younger %}
+        <div class="placement">
+        {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="winner-list">
+      <h3>Eldri flokkur</h3>
+        {% for p in page.winners.older %}
+        <div class="placement">
+        {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+
+  {%- if page.younger or page.older -%}
+    <h2>Keppendur</h2>
+  {%- endif -%}
+
+  <div class="participants">
+  {%- if page.younger -%}
+    <div class="participant-list">
+      <h3>Yngri flokkur</h3>
+      <ul>
+      {%- for c in page.younger -%}
+      <li>
+        {{ c }}
+      </li>
+      {%- endfor -%}
+      <ul>
+    </div>
+  {%- endif -%}
+
+  {%- if page.older -%}
+    <div class="participant-list">
+      <h3>Eldri flokkur</h3>
+      <ul>
+      {%- for c in page.older -%}
+      <li>
+        {{ c }}
+      </li>
+      {%- endfor -%}
+      <ul>
+    </div>
+  {%- endif -%}
+  </div>
+
+  <h2>Myndir frá keppninni</h2>
+
+  <div class="image-container">
+  {% assign image_location = "images/" | append: page.year | string %}
+  {% for image in site.static_files %}
+      {% if image.path contains image_location %}
+        {% if image.path contains "-thumb" %}
+        <a rel="gallery-1" href="{{ image.path | remove_first: "-thumb" | relative_url }}" class="swipebox">
+            <img src="{{ image.path | relative_url }}" alt="image" />
+        </a>
+        {% endif %}
+      {% endif %}
+  {% endfor %}
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" integrity="sha512-epzJ9ms+0Pq+zFMrG1lXVNvjEXgtfKx9iuEWqz3hmbaU2m/Dp1pcmpYzuSdDLqX6PMIjzMOyGFwMc+SkgFhMFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/js/jquery.swipebox.min.js" integrity="sha512-RcpE0ybOapw3Pl77Nz/la9grsKWw3MQXBoeiCg1y+psaqTNcSIQ8JYn4p3wG5XakxdyEYl/r22NLp3EYsX4SXg==" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  ;( function( $ ) {
+
+      $( '.swipebox' ).swipebox();
+
+  } )( jQuery );
+  </script>
+
+  {%- if page.image_credit %}
+  <div class="credits">
+    <span>Ljósmyndari</span>: {{ page.image_credit }}
+  </div>
+  {%- endif -%}
+
+</article>

@@ -2,8 +2,8 @@
 layout: home
 timeline:
   - name: Forkeppni
-    start: 29. jan
-    end: 6. feb
+    start: 2021-01-29
+    end: 2021-02-06
     description: |
                   Forkeppnin er haldin á Netinu og er opin öllum!
 
@@ -16,8 +16,8 @@ timeline:
                   keppnisrétt) verður boðið að taka þátt í landskeppninni.
 
   - name: Landskeppni
-    start: 20. mar
-    end: 21. mar
+    start: 2021-03-20
+    end: 2021-03-21
     description: |
                   Keppnin stendur yfir í 2 daga. Framkvæmd og staðsetning
                   keppninnar er háð gildandi sóttvarnarreglum og aðstæðum í
@@ -27,13 +27,13 @@ timeline:
                   keppnishóp.
 
   - name: Æfingar keppnishóps
-    start: 1. apr
-    end: 27. sep
+    start: 2021-04-01
+    end: 2021-09-27
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 28. sep
-    end: 2. okt
+    start: 2021-09-28
+    end: 2021-10-02
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
                   Evrópu, sem haldin verður í Prag, Tékklandi, að þessu sinni.
