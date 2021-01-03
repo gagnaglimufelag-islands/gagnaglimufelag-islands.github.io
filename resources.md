@@ -87,13 +87,13 @@ aðgerðaskráningu netumferðar til að finna hvenær óværa var sótt.
 
 * [Roppers Academy](https://www.hoppersroppers.org/courseCTF.html) er með opið námskeið sem setur mikla áherslu á gagnarannsóknir.
 
-### Baksmölun
+### Bakhönnun
 
-Baksmölun (e. *reverse engineering*) snýst um að komast að því hvernig forrit
+Bakhönnun (e. *reverse engineering*) snýst um að komast að því hvernig forrit
 virkar án þess að hafa aðgang að grunnkóða (e. *source code*) þess. Flest
 verkefni hér krefjast grunnþekkingar á forritun auk ýmissa sérsmíðaðra tóla.
 
-* [OpenSecurityTraining.info](https://opensecuritytraining.info/Training.html) heldur utan um opin námskeið sem tengjast tölvuöryggi, m.a. um baksmölun.
+* [OpenSecurityTraining.info](https://opensecuritytraining.info/Training.html) heldur utan um opin námskeið sem tengjast tölvuöryggi, m.a. um bakhönnun.
 
 ### Misnotkun
 
