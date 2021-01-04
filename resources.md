@@ -21,14 +21,10 @@ Grunnur
 Áður en hægt er að tækla helstu CTF flokkana, þá er gott að þekkja undirstöðurnar.
 
 * 10 kann að hljóma eins og merkileg tala, en hún er það ekki! 10 er grunntala þess talnakerfis sem við notum dagsdaglega, en við getum notað nánast hvaða tölu sem grunntölu. Það kemur í ljós að það hentar okkur betur að nota grunntölurnar 2, 8 og 16 þegar kemur aö tölvum og tölvutækum gögnum. Skoðum aðeins sögu annarra [talnakerfa](https://www.youtube.com/watch?v=cZH0YnFpjwU) og [hvernig hægt er að skipta á milli kerfa](https://www.youtube.com/watch?v=L2zsmYaI5ww).
-
 * Kóðun (e. *encoding*), er leið til að framsetja gögn (gögn í þessu samhengi er runa af 0 og 1) (passið að rugla ekki saman kóðun og dulkóðun (e. *encryption*)).
-
     * Þegar kemur að almennum kóðum, þá er gott að byrja á að skoða [HEX og Base64](https://www.youtube.com/watch?v=VbbOF0OPegc)
     * Mikilvægur þáttur í kóðun er kóðun bókstafa (e. *character encoding*). Í upphafi var allt [ASCII](https://www.youtube.com/watch?v=I-pQH_krD0M), sem hafði ýmsa galla í för með sér. Heill hafsjór er til af kóðun bókstafa en núna hefur heimurinn að mestu leyti sæst á [UTF-8](https://www.youtube.com/watch?v=MijmeoH9LT4) útfærsluna af UNICODE staðlinum.
-
 * Það er alls ekki þannig að allir hakkarar noti sama stýrikerfið, sumir nota Windows, aðrir Mac og enn aðrir Linux. Það er þó hollt fyrir alla að prófa sig áfram á stýrikerfum byggð á UNIX (þ.e., Linux og Mac), og þá sérstaklega skipanalínunni (e. *command line*/*terminal*).
-
     * Skoðum aðeins [Linux skipanalínuna](https://www.youtube.com/watch?v=cBokz0LTizk).
     * [OverTheWire](http://overthewire.org/wargames/bandit/) er með skemmtilega kennslu á Linux skipanalínuna.
     * Hægt er að prófa Linux skipanalínuna á Netinu, án þess að þurfa að setja upp stýrikerfið, með [CoCalc](https://cocalc.com).

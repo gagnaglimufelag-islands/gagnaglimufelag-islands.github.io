@@ -76,9 +76,11 @@ layout: default
   {% for image in site.static_files %}
       {% if image.path contains image_location %}
         {% if image.path contains "-thumb" %}
-        <a rel="gallery-1" href="{{ image.path | remove_first: "-thumb" | relative_url }}" class="swipebox">
-            <img src="{{ image.path | relative_url }}" alt="image" />
-        </a>
+        <div class="image">
+          <a rel="gallery-1" href="{{ image.path | remove_first: "-thumb" | relative_url }}" class="swipebox">
+              <img src="{{ image.path | relative_url }}" alt="image" />
+          </a>
+        </div>
         {% endif %}
       {% endif %}
   {% endfor %}

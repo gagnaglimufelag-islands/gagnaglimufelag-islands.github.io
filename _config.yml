@@ -23,8 +23,19 @@ email: 10an@10an.is
 description: Tölvuöryggiskeppni íslenskra ungmenna
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: antisec_is
+github_username:  antisec-is
+
+# Set default image to logo, so that it appears on social media
+defaults:
+    - scope:
+        path: ""
+      values:
+        image: /assets/10an-logo-final-simple.png
+    - scope:
+        path: ""
+      values:
+        locale: "is_IS"
 
 # Build settings
 theme: minima
@@ -38,6 +49,7 @@ social:
 collections:
     past_editions:
         output: true
+
 excerpt_separator: "<!--more-->"
 
 # Exclude from processing.

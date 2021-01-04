@@ -5,7 +5,4 @@ title: Eldri keppnir
 permalink: /past_editions/
 ---
 
-Eldri keppnir
-=============
-
-Hér er að finna upplýsingar um eldri útgáfur Tíunnar.
+Hér er að finna upplýsingar um úrslit og þáttakendur í keppnum fyrri ára, ásamt myndum frá keppnunum.

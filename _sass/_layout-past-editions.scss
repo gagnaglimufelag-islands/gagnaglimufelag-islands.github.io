@@ -14,10 +14,14 @@
 
     .winner-list {
       padding: 20px 40px;
-      margin: 20px;
+      margin: 10px;
       border-radius: 10px;
       background-color: #222222;
       flex: 1 0 auto;
+
+      @include media-query($on-mobile) {
+        padding: 20px;
+      }
 
       .placement {
         @include relative-font-size(1.1);
@@ -43,10 +47,14 @@
 
     .participant-list {
       padding: 20px 60px 20px 40px;
-      margin: 20px;
+      margin: 10px;
       background-color: #222222;
       border-radius: 10px;
       flex: 1 0 auto;
+
+      @include media-query($on-mobile) {
+        padding: 20px;
+      }
 
       ul {
         list-style-type: none;
@@ -64,9 +72,15 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    img {
-      width: 200px;
+    .image {
+      flex: 1 1;
+      min-width: 150px;
+      max-width: 250px;
       margin: 5px;
+    }
+
+    img {
+      width: 100%;
 
       &:hover
       {

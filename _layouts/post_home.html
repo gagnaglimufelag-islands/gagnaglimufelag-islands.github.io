@@ -4,6 +4,10 @@ layout: default
 
 <div class="home">
 
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
   {{ content }}
 
   {% include post_list.html posts=site.posts %}
