@@ -55,7 +55,7 @@ tölvuinnbrot framkvæmd af ríkjum með það að markmiði að njósna um önn
 
 Þrátt fyrir mikilvægi netöryggis, þá skortir ennþá hæfileikaríkt fólk
 til að takast á við þær áskoranir sem því fylgja. Af þessari ástæðu setti
-Tölvuöryggisráðs Evrópusambandsins, [ENISA](https://www.enisa.europa.eu/), á
+Netöryggisstofnun Evrópu, [ENISA](https://www.enisa.europa.eu/), á
 laggirnar Netöryggiskeppni Evrópu. Markmið keppninnar er að hvetja ungt fólk
 til að kynna sér netöryggi og jafnframt hvetja ungt fólk til að íhuga að
 leggja netöryggi fyrir sig að atvinnu.
