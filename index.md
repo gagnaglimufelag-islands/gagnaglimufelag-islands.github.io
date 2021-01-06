@@ -46,7 +46,7 @@ Tölvuöryggiskeppni íslenskra ungmenna, Tían, er forkeppni Íslands fyrir
 Netöryggiskeppni Evrópu, [European Cyber Security
 Challenge](https://europeancybersecuritychallenge.eu) (ESCS). Markmið ESCS er
 að vekja áhuga á netöryggi um alla Evrópu auk þess að efla þekkingu og þjálfun
-á því því sviði.
+á því sviði.
 
 Það þarf ekki að liggja lengi yfir fréttamiðlum samtímans til að átta sig
 á mikilvægi tölvuöryggis í nútímasamfélagi. Reglulega birtast fréttir af
