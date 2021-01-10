@@ -45,6 +45,8 @@ plugins:
 social:
     github: antisec-is
     twitter: antisec_is
+    facebook: netoryggiskeppniislands
+    discord: https://discord.gg/WetUTgRczH
 
 collections:
     past_editions:

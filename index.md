@@ -23,8 +23,8 @@ timeline:
                   keppninnar er háð gildandi sóttvarnarreglum og aðstæðum í
                   þjóðfélaginu.
 
-                  Þeir sem standa sig best í landskeppninni verða valdir í
-                  keppnishóp.
+                  Þeir keppendur sem standa sig best í landskeppninni verða
+                  valdir í keppnishóp.
 
   - name: Æfingar keppnishóps
     start: 2021-04-01
