@@ -2,8 +2,8 @@
 layout: home
 timeline:
   - name: Forkeppni
-    start: 2021-01-29
-    end: 2021-02-06
+    start: 2021-02-01
+    end: 2021-02-15
     description: |
                   Forkeppnin er haldin á Netinu og er opin öllum!
 
@@ -65,7 +65,7 @@ Um Tíuna
 
 Markmið Tíunnar er að velja 10 manna lið til að taka þátt í ESCS 2021 fyrir
 Íslands hönd. Samvkæmt reglum ESCS verða keppendur að vera á bilinu 14-25 ára
-(fædd á árunum 1996 til 2007). Tían fer fram í tveimur hlutum. Vikulöng
+(fædd á árunum 1996 til og með 2007). Tían fer fram í tveimur hlutum. Tveggja vikna
 forkeppni fer fram á Netinu í lok janúar og er opin öllum. Þeir keppendur sem
 standa sig best í forkeppninni, öðlast þáttökurétt í landskeppni Tíunnar, sem
 haldin verður í mars. Frammistaða keppenda í landskeppninni verður svo lögð til
