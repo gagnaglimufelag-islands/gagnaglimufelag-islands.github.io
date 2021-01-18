@@ -1,15 +1,15 @@
 <footer class="site-footer h-card">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-    <div class="wrapper">
-      <div class="sponsors">
-        {% for sponsor in site.data.sponsors %}
-        <a href="{{ sponsor.url }}">
-          <img alt="{{ sponsor.name }}" src="{{ sponsor.logo | relative_url }}">
-        </a>
-        {% endfor %}
-      </div>
+    <div class="sponsors">
+      {% for sponsor in site.data.sponsors %}
+      <a href="{{ sponsor.url }}">
+        <img alt="{{ sponsor.name }}" src="{{ sponsor.logo | relative_url }}">
+      </a>
+      {% endfor %}
+    </div>
 
+    <div class="wrapper">
         <div class="footer">
             <div class="footer-title">{{ 'now' | date: '%Y' }} &copy; {{site.title}}</div>
 

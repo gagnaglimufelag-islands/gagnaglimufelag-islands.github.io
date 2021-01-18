@@ -12,7 +12,9 @@ dl, dd, ol, ul, figure {
 
 body {
 
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 	// background style
 	background-color: #454545;
 	// from svgbackgrounds.com
@@ -137,6 +139,7 @@ li {
   > ol {
     margin-bottom: 0;
   }
+  padding: 5px 0;
 }
 
 // headings
