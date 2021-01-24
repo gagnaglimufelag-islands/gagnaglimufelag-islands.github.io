@@ -1,48 +1,11 @@
 .home-box {
-    padding:0;
-    overflow:hidden;
-    border-radius: 20px;
-    background-color: $content-color;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
-    border: solid 2px $colorscheme-5;
-    .post-link {
-        color: inherit;
-        display:block;
-        padding: $spacing-unit;
-        transition: .3s background-color;
-        &:not(:last-child) {
-            border-bottom:1px solid $colorscheme-5;
-        }
-        &:hover {
-            text-decoration: none;
-            background-color: $header-color;
-        }
-        h3, h2 {
-            margin:0;
-        }
+  padding:0;
+  overflow:hidden;
+  border-radius: 20px;
+  background-color: $content-color;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  border: solid 2px $colorscheme-5;
 
-      .news-title {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-        color: $colorscheme-2;
-
-        h1 {
-          margin-bottom: 0;
-        }
-      }
-
-      .post-excerpt {
-        margin-top: 25px;
-      }
-
-      .subtitle {
-        margin-top: 10px;
-        color: $colorscheme-5;
-        font-style: italic;
-      }
-  }
 }
 
 .home {
@@ -74,8 +37,8 @@
     justify-content: center;
     grid-template-columns: 20% 23px 75%;
     grid-template-areas:
-      "date dot title"
-      "date line content";
+    "date dot title"
+    "date line content";
 
     @include media-query($on-mobile) {
       justify-content: left;

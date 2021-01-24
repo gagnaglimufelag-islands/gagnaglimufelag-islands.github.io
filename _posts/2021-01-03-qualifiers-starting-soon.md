@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nú styttist í forkeppnina
-featured: true
+featured: false
 ---
 
 Forkeppnin er handan við hornið, en hún hefst 1. febrúar. Öllum er
