@@ -10,16 +10,14 @@ layout: default
 
   {{ content }}
 
-  <div class="home-box">
-    <div class="post-list">
-      {% assign past=site.past_editions | sort:"year" | reverse %}
-      {%- for past_edition in past -%}
-        <a class="post-link" href="{{ past_edition.url | relative_url }}">
-          <h2>{{ past_edition.title | escape }} {{ past_edition.year | escape }}</h2>
-          <div class="subtitle">{{ past_edition.location }}</div>
-        </a>
-      {%- endfor -%}
-    </div>
+  <div class="post-list">
+    {% assign past=site.past_editions | sort:"year" | reverse %}
+    {%- for past_edition in past -%}
+      <a class="post-card link" href="{{ past_edition.url | relative_url }}">
+        <h2>{{ past_edition.title | escape }} {{ past_edition.year | escape }}</h2>
+        <div class="subtitle">{{ past_edition.location }}</div>
+      </a>
+    {%- endfor -%}
   </div>
 
 </div>
