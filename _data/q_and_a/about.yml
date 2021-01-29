@@ -1,6 +1,6 @@
-- q: Hvað er Tían?
+- q: Hvað er Tían
   a: |
-      Tían er tölvuöryggiskeppni sem haldin er að frumkvæði samgöngu- og
+      Tían er Netöryggiskeppni sem haldin er að frumkvæði samgöngu- og
       sveitarstjórnarráðuneytisins. Markmið keppninnar er að vekja áhuga
       ungmenna á tölvuöryggi og hvetja til þjálfunar á því sviði. Þar að auki
       er keppnin undankeppni íslands fyrir [European Cyber Security
@@ -16,9 +16,10 @@
 - q: Hverjir hafa þátttökurétt í Tíunni?
   a: |
       Þátttakendur verða að vera á bilinu 14-25 ára (fæddir á árunum 1996 til
-      og með 2007), samvkæmt reglum ECSC. Forkeppnin er þó opin öllum, en
-      aðeins þeir sem hafa þátttökurétt í ECSC geta unnið þátttökurétt í
-      landskeppninni.
+      og með 2007) og vera frá Íslandi, samvkæmt [reglum
+      ECSC](https://europeancybersecuritychallenge.eu/ecscrules.pdf/download).
+      Forkeppnin er þó opin öllum, en aðeins þeir sem hafa þátttökurétt í ECSC
+      geta unnið þátttökurétt í landskeppninni.
 
 - q: Hvernig fer keppnin fram?
   a: |

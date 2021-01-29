@@ -42,11 +42,11 @@ timeline:
                   þátt fyrir Íslands hönd.
 ---
 
-Netöryggiskeppni Íslands, einning nefnd Tölvuöryggiskeppni íslenskra ungmenna
+Netöryggiskeppni Íslands, einnig nefnd Tölvuöryggiskeppni íslenskra ungmenna
 eða einfaldlega Tían, er árlegur viðburður sem haldinn er af frumkvæði
 samgöngu- og sveitarstjórnarráðuneytisins. Markmið keppninnar er að efla áhuga
 íslenskra ungmenna á netöryggi og auka þekkingu og færni þeirra sem sýna því
-áhuga. Þar að auki þjónar Tían því hlutverki að vera forkeppni Íslands fyrir
+áhuga. Þar að auki þjónar keppnin því hlutverki að vera forkeppni Íslands fyrir
 Netöryggiskeppni Evrópu, [European Cyber Security
 Challenge](https://europeancybersecuritychallenge.eu) (ESCS). Markmið ESCS er
 að vekja áhuga á netöryggi um alla Evrópu Netöryggiskeppni Íslands á því sviði.
@@ -63,17 +63,17 @@ laggirnar Netöryggiskeppni Evrópu. Markmið keppninnar er að hvetja ungt fól
 til að kynna sér netöryggi og jafnframt hvetja ungt fólk til að íhuga að
 leggja netöryggi fyrir sig að atvinnu.
 
-Um Tíuna
---------
+Um keppnina
+-----------
 
-Markmið Tíunnar er að velja 10 manna lið til að taka þátt í ESCS 2021 fyrir
+Markmið keppninnar er að velja 10 manna lið til að taka þátt í ESCS 2021 fyrir
 Íslands hönd. Samvkæmt reglum ESCS verða keppendur að vera á bilinu 14-25 ára
-(fædd á árunum 1996 til og með 2007). Tían fer fram í tveimur hlutum. Tveggja vikna
-forkeppni fer fram á Netinu í lok janúar og er opin öllum. Þeir keppendur sem
-standa sig best í forkeppninni, öðlast þáttökurétt í landskeppni Tíunnar, sem
-haldin verður í mars. Frammistaða keppenda í landskeppninni verður svo lögð til
-grundvallar þess að velja 10 manna hóp til að taka þátt í ECSC 2021 sem haldin
-verður í lok september í Prag, Tékklandi.
+(fædd á árunum 1996 til og með 2007). Netöryggiskeppnin fer fram í tveimur
+hlutum. Tveggja vikna forkeppni fer fram á Netinu í lok janúar og er opin
+öllum. Þeir keppendur sem standa sig best í forkeppninni, öðlast þáttökurétt
+í landskeppninni, sem haldin verður í mars. Frammistaða keppenda
+í landskeppninni verður svo lögð til grundvallar þess að velja 10 manna hóp til
+að taka þátt í ECSC 2021 sem haldin verður í lok september í Prag, Tékklandi.
 
 Bæði forkeppnin og landskeppnin verða hefðbundnar *jeopardy style* CTF
 (capture the flag) keppnir.
