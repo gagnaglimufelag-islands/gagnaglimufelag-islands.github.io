@@ -42,11 +42,14 @@ timeline:
                   þátt fyrir Íslands hönd.
 ---
 
-Tölvuöryggiskeppni íslenskra ungmenna, Tían, er forkeppni Íslands fyrir
+Netöryggiskeppni Íslands, einning nefnd Tölvuöryggiskeppni íslenskra ungmenna
+eða einfaldlega Tían, er árlegur viðburður sem haldinn er af frumkvæði
+samgöngu- og sveitarstjórnarráðuneytisins. Markmið keppninnar er að efla áhuga
+íslenskra ungmenna á netöryggi og auka þekkingu og færni þeirra sem sýna því
+áhuga. Þar að auki þjónar Tían því hlutverki að vera forkeppni Íslands fyrir
 Netöryggiskeppni Evrópu, [European Cyber Security
 Challenge](https://europeancybersecuritychallenge.eu) (ESCS). Markmið ESCS er
-að vekja áhuga á netöryggi um alla Evrópu auk þess að efla þekkingu og þjálfun
-á því sviði.
+að vekja áhuga á netöryggi um alla Evrópu Netöryggiskeppni Íslands á því sviði.
 
 Það þarf ekki að liggja lengi yfir fréttamiðlum samtímans til að átta sig
 á mikilvægi tölvuöryggis í nútímasamfélagi. Reglulega birtast fréttir af
