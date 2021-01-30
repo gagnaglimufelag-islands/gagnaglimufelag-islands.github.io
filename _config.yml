@@ -31,7 +31,7 @@ defaults:
     - scope:
         path: ""
       values:
-        image: /assets/logos/10an-logo-simple.png
+        image: https://10an.is/assets/logos/10an-logo-simple.png
     - scope:
         path: ""
       values:
