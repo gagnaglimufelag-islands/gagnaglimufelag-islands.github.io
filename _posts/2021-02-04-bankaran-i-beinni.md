@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bankarán í beinni
-featured: true
+featured: false
 ---
 
 Ertu forvitin(n) um hvernig raunverulegir öryggisgallar líta út? Langar þig að verða vitni að bankaráni?
