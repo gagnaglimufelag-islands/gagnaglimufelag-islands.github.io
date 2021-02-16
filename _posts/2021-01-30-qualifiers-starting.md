@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Opið fyrir skráningar í forkeppnina
-featured: true
+featured: false
 ---
 
 **Keppnissíðan er komin í loftið á [0xa.is](https://0xa.is) og þar er hægt að
