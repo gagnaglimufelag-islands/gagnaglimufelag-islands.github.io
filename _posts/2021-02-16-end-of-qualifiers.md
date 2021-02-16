@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forkeppninni er lokið
-featured: false
+featured: true
 ---
 
 Forkeppninni lauk rétt fyrir miðnætt í gær. Við viljum þakka öllum sem tóku
