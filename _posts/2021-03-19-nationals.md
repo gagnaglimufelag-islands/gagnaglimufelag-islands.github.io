@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Landskeppnin
-featured: true
+featured: false
 ---
 
 Landskeppnin hefst á morgun, 20. mars kl. 08:00 og stendur yfir í 36 klst, eða til 21. mars kl. 20:00.
