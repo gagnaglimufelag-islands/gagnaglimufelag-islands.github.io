@@ -1,5 +1,5 @@
-Heimasíða Tíunnar
-=================
+Heimasíða Gagnaglímunnar
+========================
 
 Heimasíðan notar jekyll og er byggð á [jekyll-theme-leaf](https://github.com/SupunKavinda/jekyll-theme-leaf).
 

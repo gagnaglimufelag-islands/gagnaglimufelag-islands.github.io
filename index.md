@@ -42,8 +42,7 @@ timeline:
                   þátt fyrir Íslands hönd.
 ---
 
-Netöryggiskeppni Íslands, einnig nefnd Tölvuöryggiskeppni íslenskra ungmenna
-eða einfaldlega Tían, er árlegur viðburður sem haldinn er af frumkvæði
+Netöryggiskeppni Íslands, sem ber gælunafnið *Gagnaglíman*, er árlegur viðburður sem haldinn er af frumkvæði
 samgöngu- og sveitarstjórnarráðuneytisins. Markmið keppninnar er að efla áhuga
 íslenskra ungmenna á netöryggi og auka þekkingu og færni þeirra sem sýna því
 áhuga. Þar að auki þjónar keppnin því hlutverki að vera forkeppni Íslands fyrir

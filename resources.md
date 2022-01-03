@@ -6,7 +6,7 @@ order: 2
 ---
 
 Hér höfum við tekið saman opinberlega aðgengilegt og frítt efni sem þú getur
-notað til að kynna þér CTF og undirbúið þig fyrir Tíuna.
+notað til að kynna þér CTF og undirbúið þig fyrir Gagnaglímuna.
 
 Höfum í huga að þetta er mikið efni að fara yfir. Þó að við höfum raðað því
 í ákveðna röð, þá þýðir það ekki að það þurfi að fara yfir það í nákvæmlega

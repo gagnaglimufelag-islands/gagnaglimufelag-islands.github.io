@@ -86,20 +86,33 @@ layout: default
   {% endfor %}
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" integrity="sha512-epzJ9ms+0Pq+zFMrG1lXVNvjEXgtfKx9iuEWqz3hmbaU2m/Dp1pcmpYzuSdDLqX6PMIjzMOyGFwMc+SkgFhMFg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/js/jquery.swipebox.min.js" integrity="sha512-RcpE0ybOapw3Pl77Nz/la9grsKWw3MQXBoeiCg1y+psaqTNcSIQ8JYn4p3wG5XakxdyEYl/r22NLp3EYsX4SXg==" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-  ;( function( $ ) {
-
-      $( '.swipebox' ).swipebox();
-
-  } )( jQuery );
-  </script>
-
   {%- if page.image_credit %}
   <div class="credits">
     <span>Ljósmyndari</span>: {{ page.image_credit }}
   </div>
   {%- endif -%}
 
+
+  {%- if page.sponsors -%}
+  <h2>Styrktaraðilar</h2>
+
+  <ul>
+    {%- for sponsor in page.sponsors -%}
+    <li>
+      <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+
 </article>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" integrity="sha512-epzJ9ms+0Pq+zFMrG1lXVNvjEXgtfKx9iuEWqz3hmbaU2m/Dp1pcmpYzuSdDLqX6PMIjzMOyGFwMc+SkgFhMFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/js/jquery.swipebox.min.js" integrity="sha512-RcpE0ybOapw3Pl77Nz/la9grsKWw3MQXBoeiCg1y+psaqTNcSIQ8JYn4p3wG5XakxdyEYl/r22NLp3EYsX4SXg==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+;( function( $ ) {
+
+    $( '.swipebox' ).swipebox();
+
+} )( jQuery );
+</script>
