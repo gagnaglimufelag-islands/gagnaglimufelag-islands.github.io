@@ -5,7 +5,7 @@ permalink: /about/
 order: 6
 ---
 
-*Gagnaglíman*,formlega nefnd *Netöryggiskeppni Íslands*, er árlegur viðburður
+*Gagnaglíman*, formlega nefnd *Netöryggiskeppni Íslands*, er árlegur viðburður
 sem hefur það að markmiði að vekja áhuga ungmenna á tölvuöryggi auk þess að
 veita þeim þjálfun sem sýna því áhuga. Keppnin er undankeppni *Evrópsku
 öryggiskeppninnar*, *European Cybersecurty Challenge* (ECSC) ár hvert eru allt að 10

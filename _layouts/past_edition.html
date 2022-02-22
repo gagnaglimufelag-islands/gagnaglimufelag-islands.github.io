@@ -105,6 +105,25 @@ layout: default
   </ul>
   {%- endif -%}
 
+
+  {%- if page.organizers -%}
+  <h2>Aðstandendur</h2>
+
+    <div class="organizer-list">
+      {%- for org in page.organizers -%}
+        <div class="organizer-item">
+          <div class="o-name">{{ org.name }}</div>
+          <div class="o-affiliation">{{ org.affiliation }}</div>
+          <div class="o-role-list">
+          {%- for role in org.roles -%}
+          <span class="o-role">{{ role }}</span>
+          {%- endfor -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
 </article>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" integrity="sha512-epzJ9ms+0Pq+zFMrG1lXVNvjEXgtfKx9iuEWqz3hmbaU2m/Dp1pcmpYzuSdDLqX6PMIjzMOyGFwMc+SkgFhMFg==" crossorigin="anonymous"></script>

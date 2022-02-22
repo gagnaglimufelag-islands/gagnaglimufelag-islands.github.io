@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Landskeppninni lokið
-featured: true
+featured: false
 ---
 
 Landskeppnin fór fram dagana 20. mars og 21. mars. Alls tóku 19 þátt

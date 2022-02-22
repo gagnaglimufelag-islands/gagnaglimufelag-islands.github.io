@@ -38,9 +38,11 @@ layout: default
       <div class="tl-date">
         {% assign start_month = event.start | date: "%m" | minus: "1" %}
         <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}</span>
+        {% if event.start != event.end %}
         -
         {% assign end_month = event.end | date: "%m" | minus: "1" %}
         <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}</span>
+        {% endif %}
       </div>
       <div class="tl-line"><div class="tl-dot"></div></div>
       <div class="tl-title"><h3>{{ event.name }}</h3></div>
