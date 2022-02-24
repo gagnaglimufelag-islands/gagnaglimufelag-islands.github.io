@@ -5,6 +5,13 @@
    viewBox="0 0 19.999999 19.999999"
    version="1.1"
    id="svg4895"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="nki-favicon.svg"
+   inkscape:export-filename="/home/hjalti/10an-favicon.png"
+   inkscape:export-xdpi="2540"
+   inkscape:export-ydpi="2540"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,6 +19,26 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4889" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="-130.75"
+     inkscape:cy="49.5"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g5431"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2556"
+     inkscape:window-height="1401"
+     inkscape:window-x="2048"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata4892">
     <rdf:RDF>
@@ -24,6 +51,8 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1">
     <g
        id="g3596"
@@ -33,7 +62,10 @@
          transform="translate(0.08557946,0.81427623)">
         <g
            id="g3551"
-           transform="matrix(0.94058856,0,0,0.94058856,108.46816,165.87571)">
+           transform="matrix(0.94058856,0,0,0.94058856,108.46816,165.87571)"
+           inkscape:export-filename="/home/hjalti/fb-profile.png"
+           inkscape:export-xdpi="565.5993"
+           inkscape:export-ydpi="565.5993">
           <g
              id="g58542"
              transform="matrix(0.16411341,0,0,0.16411341,-442.95611,-593.68717)">

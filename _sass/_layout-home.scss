@@ -4,7 +4,7 @@
   border-radius: 20px;
   background-color: $content-color;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
-  border: solid 2px $colorscheme-5;
+  border: solid 2px $theme-color;
 
 }
 
@@ -65,7 +65,7 @@
     }
 
     .tl-dot, .tl-line {
-      background-color: $colorscheme-4;
+      background-color: $theme-light;
 
       &.finished {
         background-color: #555;
@@ -82,7 +82,7 @@
     .tl-dot {
       height: 11px;
       width: 11px;
-      background-color: $colorscheme-4;
+      background-color: $theme-light;
       border-radius: 50%;
       display: inline-block;
       margin-left: -4px;
@@ -108,13 +108,13 @@
 
   .tl-event.ongoing {
     .tl-date {
-      color: $colorscheme-2;
+      color: $theme-yellow;
     }
     .tl-dot, .tl-line {
-      background-color: $colorscheme-2;
+      background-color: $theme-yellow;
     }
     @include media-query($on-mobile) {
-      border: solid 1px $colorscheme-2;
+      border: solid 1px $theme-yellow;
     }
   }
 
