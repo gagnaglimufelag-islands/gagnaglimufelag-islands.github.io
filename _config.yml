@@ -23,8 +23,8 @@ email: 10an@10an.is
 description: Netöryggiskeppni Íslands
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: antisec_is
-github_username:  antisec-is
+twitter_username: gagnagliman
+github_username: gagnaglimufelag-islands
 
 # Set default image to logo, so that it appears on social media
 defaults:
@@ -43,9 +43,9 @@ plugins:
   - jekyll-feed
 
 social:
-    github: antisec-is
-    twitter: antisec_is
-    facebook: netoryggiskeppniislands
+    github: gagnaglimufelag-islands
+    twitter: gagnagliman
+    facebook: gagnagliman
     discord: https://discord.gg/WetUTgRczH
 
 collections:
