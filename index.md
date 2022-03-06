@@ -58,14 +58,14 @@ leggja netöryggi fyrir sig að atvinnu.
 Um keppnina
 -----------
 
-Markmið keppninnar er að velja 10 manna lið til að taka þátt í ESCS 2022 fyrir
-Íslands hönd. Samvkæmt reglum ESCS verða keppendur að vera 25 ára eða yngri
+Markmið keppninnar er að velja 10 manna lið til að taka þátt í ECSC 2022 fyrir
+Íslands hönd. Samkvæmt reglum ECSC verða keppendur að vera 25 ára eða yngri
 (fædd 1997 eða seinna). Netöryggiskeppnin fer fram í tveimur
 hlutum. Tveggja vikna forkeppni fer fram á Netinu í lok mars og er opin
 öllum. Þeir keppendur sem standa sig best í forkeppninni, öðlast þáttökurétt
 í landskeppninni, sem haldin verður í maí. Frammistaða keppenda
 í landskeppninni verður svo lögð til grundvallar þess að velja 10 manna hóp til
-að taka þátt í ECSC 2021 sem haldin verður í september í Vínarborg, Austurríki.
+að taka þátt í ECSC 2022 sem haldin verður í september í Vínarborg, Austurríki.
 
 Bæði forkeppnin og landskeppnin verða hefðbundnar *jeopardy style* CTF
 (capture the flag) keppnir.
