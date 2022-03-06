@@ -40,7 +40,7 @@ háskóla-, iðnaðar- og nýsköpunarráðuneytisins. Markmið keppninnar er a�
 íslenskra ungmenna á netöryggi og auka þekkingu og færni þeirra sem sýna því
 áhuga. Þar að auki þjónar keppnin því hlutverki að vera forkeppni Íslands fyrir
 Netöryggiskeppni Evrópu, [European Cyber Security
-Challenge](https://europeancybersecuritychallenge.eu) (ESCS). Markmið ESCS er
+Challenge](https://europeancybersecuritychallenge.eu) (ECSC). Markmið ECSC er
 að vekja áhuga á netöryggi um alla Evrópu.
 
 Það þarf ekki að liggja lengi yfir fréttamiðlum samtímans til að átta sig
