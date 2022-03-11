@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forkeppnin á næsta leyti
-featured: true
+featured: false
 ---
 
 Forkeppni Gagnaglímunnar 2022 er handan við hornið, en hún hefst 11. mars. Öllum er
