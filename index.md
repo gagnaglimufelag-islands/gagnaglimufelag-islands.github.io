@@ -14,7 +14,7 @@ timeline:
     start: 2022-05-25
     end: 2022-05-25
     description: |
-                  Keppnin er 8 klst. Staðsetning verður tilkynnt síðar.
+                  Keppnin er 8 klst og verður haldin á [UTmessunni](https://utmessan.is/).
 
                   Þeir keppendur sem standa sig best í landskeppninni verða
                   valdir í keppnishóp Íslands fyrir ECSC.
