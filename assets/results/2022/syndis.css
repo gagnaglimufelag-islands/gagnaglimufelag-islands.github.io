@@ -1,0 +1,79 @@
+.slide {
+  background-image: url("./files/nki-favicon.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 170px;
+}
+
+div.title-slide {
+  background: url("./files/nki-logo-final.svg") no-repeat 50% 95%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 880px;
+}
+
+h1 {
+  font-size: 2em !important;
+}
+
+h2,h3,th {
+  color: #E6E33E !important;
+}
+
+h4 {
+  text-transform: none !important;
+}
+
+.controls-arrow {
+  color: #E6E33E; !important;
+}
+
+body {
+  background-color: #020b21 !important;
+}
+
+td,tr {
+  border: none !important;
+}
+
+td {
+  padding: 0.1em 0.5em !important;
+}
+
+section>p,section>ul,section>ol {
+  width: 100%;
+  text-align: left;
+}
+
+.red {
+  color: red;
+  font-weight: 800;
+}
+
+.green {
+  color: #39ff14;
+  font-weight: 800;
+}
+
+table {
+  font-size: 32px;
+  min-width: 80%;
+  margin-bottom: 1em !important;
+}
+
+strong {
+  color: #eb6159;
+
+}
+
+.finalists {
+  padding: 1em 0;
+}
+
+
+.finalists td {
+  padding: 0.3em 0 !important;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-left: 1em;
+}
