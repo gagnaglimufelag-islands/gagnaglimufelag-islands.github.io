@@ -12,23 +12,6 @@ layout: default
 
   {{ content }}
 
-
-  {% assign featured = site.posts | where_exp: "x", "x.featured" %}
-  {%- if featured.size > 0 -%}
-    <h1>
-      Hvað er að gerast núna?
-    </h1>
-
-    {% include post_list.html posts=featured %}
-
-    <div class="more-news">
-      <a href="{{ "/news/" | relative_url }}">
-      Eldri fréttir
-      </a>
-    </div>
-
-  {%- endif -%}
-
   <h1>
     Framkvæmd keppninnar
   </h1>
