@@ -2,8 +2,8 @@
 layout: home
 timeline:
   - name: Forkeppni
-    start: 2023-03-01
-    end: 2023-03-31
+    start: 2023-04-01
+    end: 2023-04-30
     description: |
                   Forkeppnin er haldin á Netinu og er opin öllum!
 
