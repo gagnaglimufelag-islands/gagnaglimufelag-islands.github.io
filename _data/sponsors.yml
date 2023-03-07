@@ -1,7 +1,11 @@
-- name: Syndis
-  logo: assets/sponsors/syndis.png
+- name: Origo
+  logo: assets/sponsors/origo.svg
   url: https://syndis.is
 
 - name: Háskóla-, iðnaðar- og nýsköpunarráðuneytið
   logo: assets/sponsors/hvin.svg
   url: https://www.stjornarradid.is/raduneyti/haskola-idnadar-og-nyskopunarraduneytid/
+
+- name: Syndis
+  logo: assets/sponsors/syndis.png
+  url: https://syndis.is
