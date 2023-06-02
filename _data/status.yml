@@ -1,3 +1,6 @@
 qualifiers:
   active: false
   domain: ggc.tf
+nationals:
+  active: true
+  domain: finals.ggc.tf

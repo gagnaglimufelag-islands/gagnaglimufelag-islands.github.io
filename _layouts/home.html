@@ -19,6 +19,15 @@ layout: default
   </div>
   {% endif %}
 
+  {% if site.data.status.nationals.active %}
+  <div class="hero">
+    <h1 class="title">Landskeppnin er á næsta leyti</h1>
+    <div class="content">
+      Fylgstu með á <a href="https://{{ site.data.status.nationals.domain }}">{{ site.data.status.nationals.domain }}</a>
+    </div>
+  </div>
+  {% endif %}
+
   {{ content }}
 
   <h1>
