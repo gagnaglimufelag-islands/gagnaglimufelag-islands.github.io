@@ -13,6 +13,7 @@
     justify-content: space-evenly;
 
     .winner-list {
+      max-width: 100%;
       padding: 20px 40px;
       margin: 10px;
       border-radius: 10px;
@@ -34,6 +35,26 @@
           @include relative-font-size(0.8);
           padding-left: 2px;
           font-weight: normal,
+        }
+      }
+
+      .award {
+        margin-bottom: 8px;
+        .award-name {
+          color: $theme-yellow;
+          font-weight: 800;
+          padding-bottom: 3px;
+          word-wrap: break-word;
+          white-space: normal;
+        }
+        .award-recipient-list {
+            word-wrap: break-word;
+            white-space: normal;
+            list-style-type: "🏅";
+            .award-recipient {
+              padding-left: 8px;
+              word-wrap: break-word;
+            }
         }
       }
     }

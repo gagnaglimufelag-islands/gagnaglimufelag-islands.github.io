@@ -13,28 +13,39 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if page.winners -%}
+  {%- if page.results -%}
     <h2>Sigurvegarar</h2>
   {%- endif -%}
 
-  {% assign medals = "🥇🥈🥉" %}
+  {% assign medals = "🥇🥈🥉🏅🏅🏅🏅🏅🏅🏅" %}
   <div class="winners">
-    <div class="winner-list">
-      <h3>Yngri flokkur</h3>
-        {% for p in page.winners.younger %}
-        <div class="placement">
-        {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="winner-list">
-      <h3>Eldri flokkur</h3>
-        {% for p in page.winners.older %}
-        <div class="placement">
-        {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
-        </div>
-        {% endfor %}
-    </div>
+    {% for ranking in page.results.rankings %}
+      <div class="winner-list">
+        <h3>{{ ranking.name }}</h3>
+          {% for p in ranking.ranking %}
+          <div class="placement">
+          {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
+          </div>
+          {% endfor %}
+      </div>
+    {% endfor %}
+    {% if page.results.extra %}
+      <div class="winner-list">
+        <h3>Aukaverðlaun</h3>
+          {% for award in page.results.extra %}
+          <div class="award">
+            <div class="award-name">{{ award.name }}</div>
+            <ul class="award-recipient-list">
+              {% for r in award.recipients %}
+              <li class="award-recipient">
+                {{ r }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
   {%- if page.younger or page.older -%}
