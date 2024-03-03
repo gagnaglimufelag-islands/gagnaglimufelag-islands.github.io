@@ -1,39 +1,39 @@
 ---
 layout: home
 timeline:
-  - name: Forkeppni
-    start: 2023-04-01
-    end: 2023-04-30
+  - name: Æfingarvettvangur
+    start: 2024-03-18
+    end: 2024-05-11
     description: |
-                  Forkeppnin er haldin á Netinu og er opin öllum!
+                  Æfingarvettvangur verður settur í loftið og er opinn öllum!
 
-                  Þeim keppendum sem standa sig best í forkeppninni (og hafa
-                  keppnisrétt) verður boðið að taka þátt í landskeppninni.
+                  Þeir þáttakkendur sem ná 1000 stigum og eru 25 ára eða yngri
+                  verður boðið að taka þátt í landskeppninni.
 
   - name: Landskeppni
-    start: 2023-06-03
-    end: 2023-06-04
+    start: 2024-05-25
+    end: 2024-05-25
     description: |
-                  Tveggja daga keppni. Staðsetning kynnt síðar.
+                  Eins dags keppni haldin í Háskólanum í Reykjavík.
 
                   Þeir keppendur sem standa sig best í landskeppninni verða
                   valdir í keppnishóp Íslands fyrir ECSC.
 
   - name: Æfingar keppnishóps
-    start: 2023-06-05
-    end: 2023-10-20
+    start: 2024-06-01
+    end: 2024-10-01
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 2023-10-24
-    end: 2023-10-27
+    start: 2024-10-08
+    end: 2024-10-11
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
-                  Evrópu, sem haldin verður í Hamar, Noregi, að þessu sinni.
+                  Evrópu, sem haldin verður í Tórínó, Ítalíu, að þessu sinni.
 
                   Þjálfarar velja 10 einstaklinga úr keppnishópnum til að taka
                   þátt fyrir Íslands hönd.
-current_year: 2023
+current_year: 2024
 ---
 
 Netöryggiskeppni Íslands, *Gagnaglíman*, er árlegur viðburður sem haldinn er af frumkvæði
@@ -41,7 +41,7 @@ háskóla-, iðnaðar- og nýsköpunarráðuneytisins. Markmið keppninnar er a�
 íslenskra ungmenna á netöryggi og auka þekkingu og færni þeirra sem sýna því
 áhuga. Þar að auki þjónar keppnin því hlutverki að vera forkeppni Íslands fyrir
 Netöryggiskeppni Evrópu, [European Cyber Security
-Challenge](https://europeancybersecuritychallenge.eu) (ECSC). Markmið ECSC er
+Challenge](https://ecsc.eu) (ECSC). Markmið ECSC er
 að vekja áhuga á netöryggi um alla Evrópu.
 
 Það þarf ekki að liggja lengi yfir fréttamiðlum samtímans til að átta sig
