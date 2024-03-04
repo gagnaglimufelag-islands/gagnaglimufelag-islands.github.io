@@ -62,14 +62,13 @@ Um keppnina
 Markmið keppninnar er að velja 10 manna lið til að taka þátt í ECSC {{ page.current_year }} fyrir
 Íslands hönd. Samkvæmt reglum ECSC verða keppendur að vera 25 ára eða yngri
 (fædd {{ page.current_year | minus: 25 }} eða seinna). Netöryggiskeppnin fer fram í tveimur
-hlutum. Tveggja vikna forkeppni fer fram á Netinu í lok mars og er opin
-öllum. Þeir keppendur sem standa sig best í forkeppninni, öðlast þáttökurétt
-í landskeppninni, sem haldin verður í maí. Frammistaða keppenda
-í landskeppninni verður svo lögð til grundvallar þess að velja 10 manna hóp til
-að taka þátt í ECSC {{ page.current_year }} sem haldin verður í september í Hamar, Noregi.
+hlutum. Æfingarvettvangur sem verður opin öllum og verður aðgengilegur allan ársins hring fer í loftið 18 mars. 
+Þeir þáttakendur sem ná 1000 stigum á æfingarvettvanginum fyrir 11. maí, öðlast þáttökurétt í 
+landskeppninni, sem haldin verður í maí. Frammistaða keppenda í landskeppninni verður svo lögð til 
+grundvallar þess að velja 10 manna hóp til að taka þátt í ECSC {{ page.current_year }} sem 
+haldin verður í október í Tórínó, Ítalíu.
 
-Bæði forkeppnin og landskeppnin verða hefðbundnar *jeopardy style* CTF
-(capture the flag) keppnir.
+Bæði æfingarvettvangurinn og landskeppnin verða í hefðbundnu *jeopardy style* CTF (capture the flag) formi.
 
 En ég hef enga reynslu af netöryggi og CTF, er þessi keppni fyrir mig?
 ----------------------------------------------------------------------
