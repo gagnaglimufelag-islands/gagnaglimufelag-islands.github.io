@@ -7,7 +7,7 @@ timeline:
     description: |
                   Æfingarvettvangur verður settur í loftið og er opinn öllum!
 
-                  Þeir þáttakkendur sem ná 1000 stigum og eru 25 ára eða yngri
+                  Þeir þátttakendur sem ná 1.000 stigum og eru 25 ára eða yngri
                   verður boðið að taka þátt í landskeppninni.
 
   - name: Landskeppni
