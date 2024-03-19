@@ -1,11 +1,11 @@
 ---
 layout: home
 timeline:
-  - name: Æfingarvettvangur
+  - name: Hakkaraskólinn
     start: 2024-03-18
     end: 2024-05-11
     description: |
-                  Æfingarvettvangur verður settur í loftið og er opinn öllum!
+                  [Hakkaraskólinn](https://skoli.ggc.tf) settur í loftið og er opinn öllum!
 
                   Þeir þátttakendur sem ná 1.000 stigum og eru 25 ára eða yngri
                   verður boðið að taka þátt í landskeppninni.

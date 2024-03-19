@@ -1,6 +1,6 @@
 qualifiers:
-  active: false
-  domain: ggc.tf
+  active: true
+  domain: skoli.ggc.tf
 nationals:
   active: false
   domain: finals.ggc.tf
