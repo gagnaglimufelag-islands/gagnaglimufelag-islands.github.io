@@ -25,8 +25,8 @@ timeline:
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 2024-10-08
-    end: 2024-10-11
+    start: 2024-10-06
+    end: 2024-10-10
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
                   Evrópu, sem haldin verður í Varsjá, Póllandi, að þessu sinni.
