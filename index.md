@@ -3,7 +3,7 @@ layout: home
 timeline:
   - name: Hakkaraskólinn
     start: 2024-01-01
-    end: 2024-05-10
+    end: 2024-05-11
     description: |
                   [Hakkaraskólinn](https://skoli.ggc.tf) er opinn öllum!
 
@@ -29,11 +29,12 @@ timeline:
     end: 2024-10-10
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
-                  Evrópu, sem haldin verður í Varsjá, Póllandi, að þessu sinni.
+                  Evrópu.
 
                   Þjálfarar velja 10 einstaklinga úr keppnishópnum til að taka
                   þátt fyrir Íslands hönd.
 current_year: 2025
+location: Varsjá, Póllandi
 ---
 
 Netöryggiskeppni Íslands, *Gagnaglíman*, er árlegur viðburður sem haldinn er af frumkvæði
@@ -59,14 +60,17 @@ leggja netöryggi fyrir sig að atvinnu.
 Um keppnina
 -----------
 
+{% assign quals_end = page.timeline[0].end | date: "%m" | minus: "1" %}
+{% assign ecsc_start = page.timeline[-1].start | date: "%m" | minus: "1" %}
+
 Markmið keppninnar er að velja 10 manna lið til að taka þátt í ECSC {{ page.current_year }} fyrir
 Íslands hönd. Samkvæmt reglum ECSC verða keppendur að vera 25 ára eða yngri
 (fædd {{ page.current_year | minus: 25 }} eða seinna). Netöryggiskeppnin fer fram í tveimur
 hlutum. Æfingarvettvangur sem verður opin öllum og verður aðgengilegur allan ársins hring fer í loftið 18 mars.
-Þeir þáttakendur sem ná 1000 stigum á æfingarvettvanginum fyrir 11. maí, öðlast þáttökurétt í
+Þeir þáttakendur sem ná 1000 stigum á æfingarvettvanginum fyrir {{ page.timeline[0].end | date: "%e"}}. {{ site.data.months.is_full[quals_end] }}, öðlast þáttökurétt í
 landskeppninni, sem haldin verður í maí. Frammistaða keppenda í landskeppninni verður svo lögð til
 grundvallar þess að velja 10 manna hóp til að taka þátt í ECSC {{ page.current_year }} sem
-haldin verður í október í Tórínó, Ítalíu.
+haldin verður í {{ site.data.months.is_full[ecsc_start] }} í {{ page.location }}.
 
 Bæði æfingarvettvangurinn og landskeppnin verða í hefðbundnu *jeopardy style* CTF (capture the flag) formi.
 
