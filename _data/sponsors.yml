@@ -1,14 +1,10 @@
-- name: Origo
-  logo: assets/sponsors/origo.svg
-  url: https://origo.is
-
-- name: Háskóla-, iðnaðar- og nýsköpunarráðuneytið
-  logo: assets/sponsors/hvin.svg
-  url: https://www.stjornarradid.is/raduneyti/haskola-idnadar-og-nyskopunarraduneytid/
-
 - name: Syndis
   logo: assets/sponsors/syndis.png
   url: https://syndis.is
+
+- name: Aftra
+  logo: assets/sponsors/aftra-light.svg
+  url: https://aftra.io
 
 - name: Reykjavík University
   logo: assets/sponsors/ru-logo.svg
