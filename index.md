@@ -2,8 +2,8 @@
 layout: home
 timeline:
   - name: Hakkaraskólinn
-    start: 2024-01-01
-    end: 2024-05-11
+    start: 2025-01-01
+    end: 2025-05-11
     description: |
                   [Hakkaraskólinn](https://skoli.ggc.tf) er opinn öllum!
 
@@ -11,8 +11,8 @@ timeline:
                   verður boðið að taka þátt í landskeppninni.
 
   - name: Landskeppni
-    start: 2024-05-24
-    end: 2024-05-24
+    start: 2025-05-24
+    end: 2025-05-24
     description: |
                   Eins dags keppni haldin í Háskólanum í Reykjavík.
 
@@ -20,13 +20,13 @@ timeline:
                   valdir í keppnishóp Íslands fyrir ECSC.
 
   - name: Æfingar keppnishóps
-    start: 2024-06-01
-    end: 2024-10-01
+    start: 2025-06-01
+    end: 2025-10-01
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 2024-10-06
-    end: 2024-10-10
+    start: 2025-10-06
+    end: 2025-10-10
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
                   Evrópu.
