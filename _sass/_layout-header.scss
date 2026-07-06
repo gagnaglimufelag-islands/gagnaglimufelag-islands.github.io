@@ -4,15 +4,16 @@
   top: 0;
   height: 72px;
   width: 100%;
-  background: rgb(248 247 242 / .84);
-  border-bottom: 1px solid rgb(216 222 213 / .78);
+  background: rgba(248, 247, 242, .84);
+  border-bottom: 1px solid rgba(216, 222, 213, .78);
   backdrop-filter: blur(18px);
 }
 
 .site-header-inner {
   display: flex;
   align-items: center;
-  width: min(calc(100% - 2rem), calc(#{$content-width} - (#{$spacing-unit} * 4)));
+  width: calc(100% - 2rem);
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 4));
   height: 100%;
   margin: 0 auto;
 }
@@ -83,7 +84,7 @@
     text-align: center;
     border: 1px solid var(--ggfi-color-border);
     border-radius: 999px;
-    background: rgb(255 255 255 / .48);
+    background: rgba(255, 255, 255, .48);
 
     > svg path {
       fill: var(--ggfi-color-primary);
@@ -110,7 +111,8 @@
     top: 82px;
     right: 16px;
     display: block;
-    min-width: min(260px, calc(100vw - 32px));
+    width: calc(100vw - 32px);
+    max-width: 260px;
     padding: 10px;
     border: 1px solid var(--ggfi-color-border);
     border-radius: var(--ggfi-radius-lg);
@@ -174,11 +176,11 @@
 
 @media (prefers-color-scheme: dark) {
   .site-header {
-    background: rgb(14 23 20 / .84);
-    border-bottom-color: rgb(49 67 59 / .78);
+    background: rgba(14, 23, 20, .84);
+    border-bottom-color: rgba(49, 67, 59, .78);
   }
 
   .site-nav .menu-icon {
-    background: rgb(23 35 31 / .78);
+    background: rgba(23, 35, 31, .78);
   }
 }

@@ -39,10 +39,10 @@ dl, dd, ol, ul, figure {
   --ggfi-radius-lg: 1.25rem;
   --ggfi-radius-xl: 1.75rem;
 
-  --ggfi-shadow-sm: 0 1px 2px rgb(19 32 28 / .08);
-  --ggfi-shadow-md: 0 12px 32px rgb(19 32 28 / .10);
-  --ggfi-shadow-lg: 0 22px 60px rgb(19 32 28 / .14);
-  --ggfi-focus-ring: 0 0 0 3px rgb(47 111 143 / .28);
+  --ggfi-shadow-sm: 0 1px 2px rgba(19, 32, 28, .08);
+  --ggfi-shadow-md: 0 12px 32px rgba(19, 32, 28, .10);
+  --ggfi-shadow-lg: 0 22px 60px rgba(19, 32, 28, .14);
+  --ggfi-focus-ring: 0 0 0 3px rgba(47, 111, 143, .28);
   --ggfi-content-width: 1360px;
 }
 
@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   overflow-wrap: break-word;
   background:
-    radial-gradient(circle at top left, rgb(220 236 230 / .95), transparent 32rem),
+    radial-gradient(circle at top left, rgba(220, 236, 230, .95), transparent 32rem),
     linear-gradient(180deg, var(--ggfi-color-paper), #fbfaf7 42rem, var(--ggfi-color-paper));
   color: var(--ggfi-color-ink);
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
@@ -299,15 +299,15 @@ table {
     --ggfi-color-warning: #d6a34a;
     --ggfi-color-danger: #df8b8b;
 
-    --ggfi-shadow-sm: 0 1px 2px rgb(0 0 0 / .28);
-    --ggfi-shadow-md: 0 16px 38px rgb(0 0 0 / .34);
-    --ggfi-shadow-lg: 0 24px 70px rgb(0 0 0 / .40);
-    --ggfi-focus-ring: 0 0 0 3px rgb(142 209 185 / .32);
+    --ggfi-shadow-sm: 0 1px 2px rgba(0, 0, 0, .28);
+    --ggfi-shadow-md: 0 16px 38px rgba(0, 0, 0, .34);
+    --ggfi-shadow-lg: 0 24px 70px rgba(0, 0, 0, .40);
+    --ggfi-focus-ring: 0 0 0 3px rgba(142, 209, 185, .32);
   }
 
   body {
     background:
-      radial-gradient(circle at top left, rgb(31 92 77 / .35), transparent 32rem),
+      radial-gradient(circle at top left, rgba(31, 92, 77, .35), transparent 32rem),
       linear-gradient(180deg, var(--ggfi-color-paper), #111d19 42rem, var(--ggfi-color-paper));
   }
 

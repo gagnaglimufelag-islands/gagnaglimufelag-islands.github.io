@@ -58,7 +58,7 @@
     place-items: center;
     color: white;
     background:
-      radial-gradient(circle at 30% 20%, rgb(142 209 185 / .22), transparent 7rem),
+      radial-gradient(circle at 30% 20%, rgba(142, 209, 185, .22), transparent 7rem),
       linear-gradient(180deg, #13201c, #1f5c4d);
     font-size: 1.35rem;
     font-weight: 900;
@@ -399,11 +399,11 @@
       justify-content: center;
       min-height: 70px;
       padding: 12px 16px;
-      border: 1px solid rgb(19 32 28 / .34);
+      border: 1px solid rgba(19, 32, 28, .34);
       border-radius: var(--ggfi-radius-md);
       color: white;
       background:
-        radial-gradient(circle at top left, rgb(142 209 185 / .16), transparent 10rem),
+        radial-gradient(circle at top left, rgba(142, 209, 185, .16), transparent 10rem),
         linear-gradient(135deg, #13201c, #1f5c4d);
       font-weight: 800;
       text-align: center;
@@ -412,7 +412,7 @@
       &:hover {
         color: white;
         background:
-          radial-gradient(circle at top left, rgb(142 209 185 / .22), transparent 10rem),
+          radial-gradient(circle at top left, rgba(142, 209, 185, .22), transparent 10rem),
           linear-gradient(135deg, #17231f, #1f5c4d);
       }
     }
