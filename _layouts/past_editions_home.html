@@ -2,20 +2,58 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home past-editions-home">
 
-  <header>
+  <header class="archive-hero">
+    <p class="archive-kicker">Saga Gagnaglímunnar</p>
     <h1>{{ page.title | escape }}</h1>
+    {{ content }}
   </header>
 
-  {{ content }}
-
-  <div class="post-list">
+  <div class="edition-archive-grid">
     {% assign past=site.past_editions | sort:"year" | reverse %}
     {%- for past_edition in past -%}
-      <a class="post-card link" href="{{ past_edition.url | relative_url }}">
-        <h2>{{ past_edition.title | escape }} {{ past_edition.year | escape }}</h2>
-        <div class="subtitle">{{ past_edition.location }}</div>
+      {% assign participant_count = 0 %}
+      {% if past_edition.younger %}
+        {% assign participant_count = participant_count | plus: past_edition.younger.size %}
+      {% endif %}
+      {% if past_edition.older %}
+        {% assign participant_count = participant_count | plus: past_edition.older.size %}
+      {% endif %}
+      {% assign winner_name = nil %}
+      {% assign winner_points = -1 %}
+      {% if past_edition.results %}
+        {% for ranking in past_edition.results.rankings %}
+          {% for competitor in ranking.ranking %}
+            {% assign competitor_points = competitor.points | plus: 0 %}
+            {% if competitor_points > winner_points %}
+              {% assign winner_points = competitor_points %}
+              {% assign winner_name = competitor.name %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+
+      <a class="edition-archive-card" href="{{ past_edition.url | relative_url }}">
+        <div class="edition-year">{{ past_edition.year | escape }}</div>
+        <div class="edition-card-body">
+          <h2>{{ past_edition.title | escape }}</h2>
+          <p>{{ past_edition.location }}</p>
+          <dl>
+            {% if participant_count > 0 %}
+            <div>
+              <dt>Keppendur</dt>
+              <dd>{{ participant_count }}</dd>
+            </div>
+            {% endif %}
+            {% if winner_name %}
+            <div class="winner-stat">
+              <dt>Sigurvegari</dt>
+              <dd>{{ winner_name }}</dd>
+            </div>
+            {% endif %}
+          </dl>
+        </div>
       </a>
     {%- endfor -%}
   </div>

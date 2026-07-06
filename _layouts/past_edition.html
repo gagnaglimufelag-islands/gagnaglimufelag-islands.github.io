@@ -3,10 +3,66 @@ layout: default
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" integrity="sha512-ih6Xht3ics+Ewow1rR+nSCuWB1Xm3Mul7o+PR71VK6mQ7IWUgypDUo0zEQTUnk717zH6VhvqVCcKLQVGzuE4mQ==" crossorigin="anonymous" />
 
-<article class="post h-entry">
+{% assign participant_count = 0 %}
+{% if page.younger %}
+  {% assign participant_count = participant_count | plus: page.younger.size %}
+{% endif %}
+{% if page.older %}
+  {% assign participant_count = participant_count | plus: page.older.size %}
+{% endif %}
+{% assign winner_name = nil %}
+{% assign winner_points = -1 %}
+{% if page.results %}
+  {% for ranking in page.results.rankings %}
+    {% for competitor in ranking.ranking %}
+      {% assign competitor_points = competitor.points | plus: 0 %}
+      {% if competitor_points > winner_points %}
+        {% assign winner_points = competitor_points %}
+        {% assign winner_name = competitor.name %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+{% assign image_location = "images/" | append: page.year | string %}
+{% assign photo_count = 0 %}
+{% for image in site.static_files %}
+  {% if image.path contains image_location and image.path contains "-thumb" %}
+    {% assign photo_count = photo_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% assign editions = site.past_editions | sort:"year" %}
+{% assign previous_edition = nil %}
+{% assign next_edition = nil %}
+{% for edition in editions %}
+  {% if edition.year < page.year %}
+    {% assign previous_edition = edition %}
+  {% elsif edition.year > page.year and next_edition == nil %}
+    {% assign next_edition = edition %}
+  {% endif %}
+{% endfor %}
 
-  <header class="post-header">
-    <h1 class="post-title p-name">{{ page.title | escape }} {{ page.year }}</h1>
+<article class="post h-entry past-edition">
+
+  <header class="post-header edition-hero">
+    <div>
+      <p class="edition-kicker">Eldri keppni</p>
+      <h1 class="post-title p-name">{{ page.title | escape }} {{ page.year }}</h1>
+      <p class="edition-location">{{ page.location }}</p>
+    </div>
+    <dl class="edition-stats" aria-label="Helstu upplýsingar um keppnina">
+      {% if participant_count > 0 %}
+      <div>
+        <dt>Keppendur</dt>
+        <dd>{{ participant_count }}</dd>
+      </div>
+      {% endif %}
+      {% if winner_name %}
+      <div class="winner-stat">
+        <dt>Sigurvegari</dt>
+        <dd>{{ winner_name }}</dd>
+      </div>
+      {% endif %}
+    </dl>
   </header>
 
   <div class="post-content e-content">
@@ -23,14 +79,16 @@ layout: default
       <div class="winner-list">
         <h3>{{ ranking.name }}</h3>
           {% for p in ranking.ranking %}
-          <div class="placement">
-          {{ medals | slice: forloop.index0 }} {{ p.name }} <span>{{ p.points }} stig</span>
+          <div class="placement placement-{{ forloop.index }}">
+            <span class="placement-medal">{{ medals | slice: forloop.index0 }}</span>
+            <span class="placement-name">{{ p.name }}</span>
+            <span class="placement-points">{{ p.points }} stig</span>
           </div>
           {% endfor %}
       </div>
     {% endfor %}
     {% if page.results.extra %}
-      <div class="winner-list">
+      <div class="winner-list award-list">
         <h3>Aukaverðlaun</h3>
           {% for award in page.results.extra %}
           <div class="award">
@@ -62,7 +120,7 @@ layout: default
         {{ c }}
       </li>
       {%- endfor -%}
-      <ul>
+      </ul>
     </div>
   {%- endif -%}
 
@@ -75,27 +133,28 @@ layout: default
         {{ c }}
       </li>
       {%- endfor -%}
-      <ul>
+      </ul>
     </div>
   {%- endif -%}
   </div>
 
+  {%- if photo_count > 0 -%}
   <h2>Myndir frá keppninni</h2>
 
   <div class="image-container">
-  {% assign image_location = "images/" | append: page.year | string %}
   {% for image in site.static_files %}
       {% if image.path contains image_location %}
         {% if image.path contains "-thumb" %}
         <div class="image">
           <a rel="gallery-1" href="{{ image.path | remove_first: "-thumb" | relative_url }}" class="swipebox">
-              <img src="{{ image.path | relative_url }}" alt="image" />
+              <img src="{{ image.path | relative_url }}" alt="Mynd frá {{ page.title }} {{ page.year }}" />
           </a>
         </div>
         {% endif %}
       {% endif %}
   {% endfor %}
   </div>
+  {%- endif -%}
 
   {%- if page.image_credit %}
   <div class="credits">
@@ -107,13 +166,26 @@ layout: default
   {%- if page.sponsors -%}
   <h2>Styrktaraðilar</h2>
 
-  <ul>
+  <div class="edition-sponsors">
     {%- for sponsor in page.sponsors -%}
-    <li>
-      <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>
-    </li>
+    {% assign sponsor_logo_path = "/" | append: sponsor.logo %}
+    {% assign sponsor_logo_found = false %}
+    {% if sponsor.logo %}
+      {% for file in site.static_files %}
+        {% if file.path == sponsor_logo_path %}
+          {% assign sponsor_logo_found = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <a href="{{ sponsor.url }}">
+      {% if sponsor_logo_found %}
+      <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}">
+      {% else %}
+      <span>{{ sponsor.name }}</span>
+      {% endif %}
+    </a>
     {%- endfor -%}
-  </ul>
+  </div>
   {%- endif -%}
 
 
@@ -134,6 +206,21 @@ layout: default
       {%- endfor -%}
     </div>
   {%- endif -%}
+
+  <nav class="edition-nav" aria-label="Fletta milli eldri keppna">
+    {% if previous_edition %}
+    <a class="edition-nav-link" href="{{ previous_edition.url | relative_url }}">
+      <span>← Fyrri keppni</span>
+      <strong>{{ previous_edition.title }} {{ previous_edition.year }}</strong>
+    </a>
+    {% endif %}
+    {% if next_edition %}
+    <a class="edition-nav-link next" href="{{ next_edition.url | relative_url }}">
+      <span>Næsta keppni →</span>
+      <strong>{{ next_edition.title }} {{ next_edition.year }}</strong>
+    </a>
+    {% endif %}
+  </nav>
 
 </article>
 
