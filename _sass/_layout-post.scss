@@ -1,94 +1,127 @@
 /**
- * Posts
+ * Pages and posts
  */
- .post-header {
-    margin-bottom: $spacing-unit;
+.post-header {
+  margin-bottom: $spacing-unit;
 }
-  
+
 .post-title,
 .post-content h1 {
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
-    line-height: 1.15;
+  @include relative-font-size(2.625);
+  letter-spacing: -0.055em;
+  line-height: 1.05;
 
-    @media screen and (min-width: $on-laptop) {
-        @include relative-font-size(2.625);
-    }
-
+  @media screen and (min-width: $on-laptop) {
+    @include relative-font-size(3.1);
+  }
 }
 
 .post-content {
-    h1, h2, h3 { margin-top: $spacing-unit }
-    h4, h5, h6 { margin-top: $spacing-unit }
+  width: 100%;
 
-    h2 {
-        @include relative-font-size(1.75);
+  h1, h2, h3 { margin-top: $spacing-unit; }
+  h4, h5, h6 { margin-top: $spacing-unit; }
 
-        @media screen and (min-width: $on-laptop) {
-            @include relative-font-size(2);
-        }
+  h2 {
+    @include relative-font-size(1.75);
+    color: var(--ggfi-color-primary-strong);
+
+    @media screen and (min-width: $on-laptop) {
+      @include relative-font-size(2);
     }
+  }
 
-    h3 {
-        @include relative-font-size(1.375);
+  h3 {
+    @include relative-font-size(1.375);
 
-        @media screen and (min-width: $on-laptop) {
-            @include relative-font-size(1.625);
-        }
+    @media screen and (min-width: $on-laptop) {
+      @include relative-font-size(1.55);
     }
+  }
 
-    h4 {
-        @include relative-font-size(1.25);
-    }
-
-    h5 {
-        @include relative-font-size(1.125);
-    }
-    h6 {
-        @include relative-font-size(1.0625);
-    }
+  h4 { @include relative-font-size(1.25); }
+  h5 { @include relative-font-size(1.125); }
+  h6 { @include relative-font-size(1.0625); }
 }
-
 
 article, .comments, .box {
-    padding: $spacing-unit;
-    background: $content-color;
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
-    margin: 25px 0;
-    @include media-query($on-mobile) {
-        padding: 0;
-        background: transparent;
-        box-shadow: none;
-    }
+  padding: clamp(24px, 4vw, 44px);
+  background: var(--ggfi-color-surface);
+  border: 1px solid var(--ggfi-color-border);
+  border-radius: var(--ggfi-radius-xl);
+  box-shadow: var(--ggfi-shadow-sm);
+  margin: 25px 0;
 }
+
 .comments {
-    @media screen and (min-width: $on-mobile) {
-        padding:15px $spacing-unit;
-    }
+  @media screen and (min-width: $on-mobile) {
+    padding: 15px $spacing-unit;
+  }
 }
 
 .page-content {
-    margin-top: 80px;
+  flex: 1;
+  padding-top: 32px;
+  padding-bottom: 56px;
 }
 
 .post-meta {
-  color: $theme-yellow;
+  color: var(--ggfi-color-ink-muted);
   font-style: italic;
 }
 
 .hero-button-wrapper {
-  margin-top: 40px;
+  margin-top: 28px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   .hero-button {
-    padding: 20px 40px;
-    text-decoration: none;
-    background-color: $theme-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    min-height: 46px;
+    padding: .75rem 1rem;
+    border: 1px solid var(--ggfi-color-primary);
+    border-radius: 999px;
     color: white;
-    font-size: 22px;
-    border-radius: 5px;
-    font-weight: 600;
+    background-color: var(--ggfi-color-primary);
+    font-size: .98rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-decoration: none;
+    box-shadow: var(--ggfi-shadow-sm);
+
+    &::after {
+      content: "↗";
+      font-size: .95em;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: white;
+      background: var(--ggfi-color-primary-strong);
+      text-decoration: none;
+    }
+  }
+
+  @include media-query($on-mobile) {
+    .hero-button {
+      width: 100%;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-content h2 {
+    color: var(--ggfi-color-primary);
+  }
+
+  .hero-button-wrapper .hero-button {
+    color: #08110e;
+
+    &:hover {
+      color: #08110e;
+    }
   }
 }

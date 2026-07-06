@@ -2,8 +2,8 @@
 layout: home
 timeline:
   - name: Hakkaraskólinn
-    start: 2025-01-01
-    end: 2025-05-11
+    start: 2026-01-01
+    end: 2026-08-01
     description: |
                   [Hakkaraskólinn](https://skoli.ggc.tf) er opinn öllum!
 
@@ -11,8 +11,8 @@ timeline:
                   verður boðið að taka þátt í landskeppninni.
 
   - name: Landskeppni
-    start: 2025-05-24
-    end: 2025-05-24
+    start: 2026-08-08
+    end: 2026-08-08
     description: |
                   Eins dags keppni haldin í Háskólanum í Reykjavík.
 
@@ -20,21 +20,21 @@ timeline:
                   valdir í keppnishóp Íslands fyrir ECSC.
 
   - name: Æfingar keppnishóps
-    start: 2025-06-01
-    end: 2025-10-01
+    start: 2026-08-01
+    end: 2026-10-10
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 2025-10-06
-    end: 2025-10-10
+    start: 2026-10-12
+    end: 2026-10-16
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
                   Evrópu.
 
                   Þjálfarar velja 10 einstaklinga úr keppnishópnum til að taka
                   þátt fyrir Íslands hönd.
-current_year: 2025
-location: Varsjá, Póllandi
+current_year: 2026
+location: Bochum, Þýskalandi
 ---
 
 Netöryggiskeppni Íslands, *Gagnaglíman*, er árlegur viðburður sem haldinn er af frumkvæði

@@ -6,69 +6,177 @@ layout: default
 
   <!-- {{ 'now' | date: '%Y-%m-%d %H:%M:%S' }} -->
 
-  <div class="main-logo">
-    <img id="logo" class="logo" src="{{ "assets/logos/nki-logo.svg" | relative_url }}" />
-  </div>
+  <section class="home-hero" aria-labelledby="home-hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Netöryggiskeppni Íslands · {{ page.current_year }}</p>
+      <h1 id="home-hero-title">Lærðu netöryggi<br>Kepptu fyrir Ísland</h1>
+      <p class="hero-lead">
+        Gagnaglíman er árleg netöryggiskeppni fyrir forvitna, staðfasta og
+        skapandi einstaklinga sem vilja byggja upp hagnýta tæknifærni.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="{{ "/getting_started/" | relative_url }}">Byrja hér</a>
+        <a class="button button-secondary" href="{{ "/hakkaraskolinn/" | relative_url }}">Skoða Hakkaraskólann</a>
+      </div>
+      <div class="hero-stats" aria-label="Helstu upplýsingar">
+        <div>
+          <strong>10</strong>
+          <span>í lokalið Íslands</span>
+        </div>
+        <div>
+          <strong>25</strong>
+          <span>ára eða yngri</span>
+        </div>
+        <div>
+          <strong>ECSC</strong>
+          <span>{{ page.location }}</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-visual" aria-label="Leiðin í íslenska landsliðið">
+      <div class="program-card">
+        <div class="program-lockup">
+          <img id="logo" class="logo" src="{{ "assets/favicons/favicon.svg" | relative_url }}" alt="" />
+          <div>
+            <span class="program-label">Gagnaglíman {{ page.current_year }}</span>
+            <strong>Leiðin í landsliðið</strong>
+          </div>
+        </div>
+        <ol class="program-steps">
+          <li>
+            <span>01</span>
+            <div>
+              <strong>Hakkaraskólinn</strong>
+              <small>Æfingar og forkeppni</small>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <strong>Landskeppnin</strong>
+              <small>Bestu keppendur mætast</small>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <strong>ECSC</strong>
+              <small>{{ page.location }}</small>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </aside>
+  </section>
 
   {% if site.data.status.qualifiers.active %}
-  <div class="hero">
-    <h1 class="title">Hakkaraskólinn er kominn í loftið</h1>
-    <div class="content">
-      Byrjaðu hakkaraferilinn á <a href="https://{{ site.data.status.qualifiers.domain }}">{{ site.data.status.qualifiers.domain }}</a>
+  <section class="launch-banner">
+    <div>
+      <span class="pulse-dot"></span>
+      <strong>Hakkaraskólinn er kominn í loftið</strong>
     </div>
-  </div>
+    <a href="https://{{ site.data.status.qualifiers.domain }}">Byrjaðu á {{ site.data.status.qualifiers.domain }}</a>
+  </section>
   {% endif %}
 
   {% if site.data.status.nationals.active %}
-  <div class="hero">
-    <h1 class="title">Landskeppnin er á næsta leyti</h1>
-    <div class="content">
-      Fylgstu með á <a href="https://{{ site.data.status.nationals.domain }}">{{ site.data.status.nationals.domain }}</a>
+  <section class="launch-banner">
+    <div>
+      <span class="pulse-dot"></span>
+      <strong>Landskeppnin er á næsta leyti</strong>
     </div>
-  </div>
+    <a href="https://{{ site.data.status.nationals.domain }}">Fylgstu með á {{ site.data.status.nationals.domain }}</a>
+  </section>
   {% endif %}
 
-  {{ content }}
+  <section class="quick-cards" aria-label="Af hverju að taka þátt">
+    <article class="quick-card">
+      <span class="card-label">Byrjendavænt</span>
+      <h2>Fyrir forvitið fólk</h2>
+      <p>Þú þarft ekki fyrri reynslu. Forvitni, þolinmæði og áhugi duga til að byrja.</p>
+    </article>
+    <article class="quick-card">
+      <span class="card-label">Praktísk færni</span>
+      <h2>Raunhæfar þrautir</h2>
+      <p>Verkefnin byggja á CTF-formi og snerta vefi, dulkóðun, greiningu gagna og OSINT.</p>
+    </article>
+    <article class="quick-card">
+      <span class="card-label">Tækifæri</span>
+      <h2>Leið í landsliðið</h2>
+      <p>Sterk frammistaða getur opnað leið inn í keppnishóp Íslands fyrir ECSC.</p>
+    </article>
+  </section>
 
-  <h1>
-    Framkvæmd keppninnar
-  </h1>
-  <div class="timeline">
-    {%- for event in page.timeline -%}
-    <div class="tl-event" data-start="{{ event.start }}" data-end="{{ event.end }}">
-      <div class="tl-date">
-        {% assign start_month = event.start | date: "%m" | minus: "1" %}
-        <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}</span>
-        {% if event.start != event.end %}
-        -
-        {% assign end_month = event.end | date: "%m" | minus: "1" %}
-        <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}</span>
-        {% endif %}
-      </div>
-      <div class="tl-line"><div class="tl-dot"></div></div>
-      <div class="tl-title"><h3>{{ event.name }}</h3></div>
-      <div class="tl-line"></div>
-      <div class="tl-content">
-        {{ event.description | markdownify }}
-      </div>
+  <section class="home-content-card">
+    {{ content }}
+  </section>
+
+  <section class="timeline-section" aria-labelledby="timeline-title">
+    <div class="section-heading">
+      <h1 id="timeline-title">Framkvæmd keppninnar</h1>
+      <p>Frá fyrstu þrautum í Hakkaraskólanum yfir í æfingar og loks Netöryggiskeppni Evrópu.</p>
     </div>
-    {%- endfor -%}
-  </div>
+
+    <div class="timeline">
+      {%- for event in page.timeline -%}
+      <div class="tl-event" data-start="{{ event.start }}" data-end="{{ event.end }}">
+        <div class="tl-date">
+          {% assign start_month = event.start | date: "%m" | minus: "1" %}
+          <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}</span>
+          {% if event.start != event.end %}
+          -
+          {% assign end_month = event.end | date: "%m" | minus: "1" %}
+          <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}</span>
+          {% endif %}
+        </div>
+        <div class="tl-marker"><div class="tl-dot"></div></div>
+        <div class="tl-title">
+          <h3>{{ event.name }}</h3>
+          <span class="tl-status">Framundan</span>
+        </div>
+        <div class="tl-line"></div>
+        <div class="tl-content">
+          {{ event.description | markdownify }}
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
+
+  <section class="gallery-section" aria-labelledby="gallery-title">
+    <div class="section-heading">
+      <h1 id="gallery-title">Svipmyndir úr fyrri keppnum</h1>
+    </div>
+    <div class="gallery-grid">
+      <img src="{{ "assets/images/2020/IMG_3727-thumb.jpg" | relative_url }}" alt="Keppendur í Gagnaglímunni 2020">
+      <img src="{{ "assets/images/2022/1003388-thumb.jpg" | relative_url }}" alt="Viðburður Gagnaglímunnar 2022">
+      <img src="{{ "assets/images/2023/000-6-thumb.jpg" | relative_url }}" alt="Gagnaglíman 2023">
+      <img src="{{ "assets/images/2024/20240525-DSC01652-final-thumb.jpg" | relative_url }}" alt="Verðlaunaafhending Gagnaglímunnar 2024">
+    </div>
+  </section>
 
   <script>
     let now = new Date().setHours(0,0,0,0);
     document.querySelectorAll(".tl-event").forEach(event => {
       let start = Date.parse(event.dataset.start);
       let end = Date.parse(event.dataset.end);
+      let status = event.querySelector(".tl-status");
 
       let cls = '';
+      let label = 'Framundan';
       if (start <= now && now <= end) {
         cls = 'ongoing';
+        label = 'Í gangi';
       } else if (now > end) {
         cls = 'finished';
+        label = 'Lokið';
       }
       if (cls) {
         event.classList.add(cls);
+      }
+      if (status) {
+        status.textContent = label;
       }
     })
   </script>

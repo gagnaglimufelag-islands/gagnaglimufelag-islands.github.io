@@ -1,13 +1,16 @@
 <footer class="site-footer h-card">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-    <div class="sponsors">
-      {% for sponsor in site.data.sponsors %}
-      <a href="{{ sponsor.url }}">
-        <img alt="{{ sponsor.name }}" src="{{ sponsor.logo | relative_url }}">
-      </a>
-      {% endfor %}
-    </div>
+    <section class="sponsor-section" aria-labelledby="sponsor-heading">
+      <h2 id="sponsor-heading" class="sponsor-kicker">Styrktaraðilar</h2>
+      <div class="sponsors">
+        {% for sponsor in site.data.sponsors %}
+        <a class="sponsor sponsor-{{ sponsor.name | slugify }}" href="{{ sponsor.url }}" aria-label="{{ sponsor.name }}">
+          <img alt="{{ sponsor.name }}" src="{{ sponsor.logo | relative_url }}">
+        </a>
+        {% endfor %}
+      </div>
+    </section>
 
     <div class="wrapper">
         <div class="footer">
