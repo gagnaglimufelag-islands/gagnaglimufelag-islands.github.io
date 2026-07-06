@@ -42,13 +42,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-sass:
-  quiet_deps: true
-  silence_deprecations:
-    - import
-    - global-builtin
-    - color-functions
-
 social:
     github: gagnaglimufelag-islands
     twitter: gagnagliman
