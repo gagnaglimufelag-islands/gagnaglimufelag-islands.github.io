@@ -89,9 +89,9 @@
 
   dl > div {
     display: grid;
-    grid-template-columns: minmax(86px, .32fr) minmax(0, 1fr);
+    grid-template-columns: minmax(78px, .28fr) minmax(0, 1fr);
     align-items: baseline;
-    gap: 14px;
+    gap: 12px;
     padding-top: 10px;
     border-top: 1px solid var(--ggfi-color-border);
   }
@@ -102,9 +102,9 @@
 
   dt {
     color: var(--ggfi-color-ink-muted);
-    font-size: .78rem;
+    font-size: .65rem;
     font-weight: 800;
-    letter-spacing: .05em;
+    letter-spacing: .02em;
     text-transform: uppercase;
   }
 
