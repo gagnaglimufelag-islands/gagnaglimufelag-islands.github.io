@@ -10,14 +10,14 @@ timeline:
                   Þeir þátttakendur sem ná 1.000 stigum og eru 25 ára eða yngri
                   verður boðið að taka þátt í landskeppninni.
 
-  - name: Landskeppni
+  - name: <del>Landskeppni</del>
     start: 2026-08-08
     end: 2026-08-08
     description: |
-                  Eins dags keppni haldin í Háskólanum í Reykjavík.
+                  Landskeppninni hefur verið aflýst í ár, en þeim sem hafa
+                  áhuga á að koma í keppnishóp Íslands er bent á að hafa
+                  samband við <ggfi@ggfi.is>.
 
-                  Þeir keppendur sem standa sig best í landskeppninni verða
-                  valdir í keppnishóp Íslands fyrir ECSC.
 
   - name: Æfingar keppnishóps
     start: 2026-08-01
