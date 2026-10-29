@@ -52,7 +52,7 @@ tölvuöryggi eða tölvunarfræði.
 
 ### Hverjir mega taka þátt?
 
-Til að teljast gjaldgengur til þátttöku í Landskeppni Gagnaglímunnar og sem fulltrúi íslands í Hakkarakeppni Evrópu þarf þátttakandi að vera **íslenskur ríkisborgari** og **ekki eldri en 25 ára** (miðað við síðasta dag ársins, þ.e. fæddur á árinu <span id="oldest-birth-year"></span> eða seinna).
+Til að teljast gjaldgengur til þátttöku í Landskeppni Gagnaglímunnar og sem fulltrúi Íslands í Netöryggiskeppni Evrópu {{ site.competition_year }} þarf þátttakandi að vera **íslenskur ríkisborgari** og **ekki eldri en 25 ára** (miðað við síðasta dag keppnisársins, þ.e. fæddur á árinu {{ site.competition_year | minus: 25 }} eða seinna).
 
 Hakkaraskólinn er opinn öllum, óháð aldri og þjóðerni, en aðeins gjaldgengir þátttakendur fá boð í Landskeppnina.
 
@@ -60,11 +60,3 @@ Hakkaraskólinn er opinn öllum, óháð aldri og þjóðerni, en aðeins gjaldg
 ### Allt í lagi, þetta hljómar áhugavert, en hvernig byrja ég?
 
 Þá er [Hakkaraskólinn]({% link hakkaraskolinn.md %}) fyrir þig!
-
-
-
-<script>
-const year = (new Date()).getFullYear()
-const yearSpan = document.getElementById("oldest-birth-year")
-yearSpan.innerText = (year - 25)
-</script>

@@ -8,7 +8,7 @@ layout: default
 
   <section class="home-hero" aria-labelledby="home-hero-title">
     <div class="hero-copy">
-      <p class="eyebrow">Netöryggiskeppni Íslands · {{ page.current_year }}</p>
+      <p class="eyebrow">Netöryggiskeppni Íslands · {{ site.competition_year }}</p>
       <h1 id="home-hero-title">Lærðu netöryggi<br>Kepptu fyrir Ísland</h1>
       <p class="hero-lead">
         Gagnaglíman er árleg netöryggiskeppni fyrir forvitna, staðfasta og
@@ -39,7 +39,7 @@ layout: default
         <div class="program-lockup">
           <img id="logo" class="logo" src="{{ "assets/favicons/favicon.svg" | relative_url }}" alt="" />
           <div>
-            <span class="program-label">Gagnaglíman {{ page.current_year }}</span>
+            <span class="program-label">Gagnaglíman {{ site.competition_year }}</span>
             <strong>Leiðin í landsliðið</strong>
           </div>
         </div>
@@ -120,14 +120,20 @@ layout: default
 
     <div class="timeline">
       {%- for event in page.timeline -%}
-      <div class="tl-event" data-start="{{ event.start }}" data-end="{{ event.end }}">
+      <div class="tl-event" data-start="{{ event.start | date: '%Y-%m-%d' }}" data-end="{{ event.end | date: '%Y-%m-%d' }}">
         <div class="tl-date">
+          {% if event.date_label %}
+          <span>{{ event.date_label }}</span>
+          {% else %}
           {% assign start_month = event.start | date: "%m" | minus: "1" %}
-          <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}</span>
+          {% assign start_year = event.start | date: "%Y" %}
+          {% assign end_year = event.end | date: "%Y" %}
+          <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}{% if start_year != end_year %} {{ start_year }}{% endif %}</span>
           {% if event.start != event.end %}
           -
           {% assign end_month = event.end | date: "%m" | minus: "1" %}
-          <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}</span>
+          <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}{% if start_year != end_year %} {{ end_year }}{% endif %}</span>
+          {% endif %}
           {% endif %}
         </div>
         <div class="tl-marker"><div class="tl-dot"></div></div>
@@ -157,24 +163,27 @@ layout: default
   </section>
 
   <script>
-    let now = new Date().setHours(0,0,0,0);
+    // Compare calendar days in the visitor's timezone, including the end day.
+    const now = new Date().setHours(0, 0, 0, 0);
+    function localDate(value) {
+      const [year, month, day] = value.split('-').map(Number);
+      return new Date(year, month - 1, day).getTime();
+    }
     document.querySelectorAll(".tl-event").forEach(event => {
-      let start = Date.parse(event.dataset.start);
-      let end = Date.parse(event.dataset.end);
-      let status = event.querySelector(".tl-status");
+      const start = localDate(event.dataset.start);
+      const end = localDate(event.dataset.end);
+      const status = event.querySelector(".tl-status");
 
-      let cls = '';
+      const ongoing = start <= now && now <= end;
+      const finished = now > end;
       let label = 'Framundan';
-      if (start <= now && now <= end) {
-        cls = 'ongoing';
+      if (ongoing) {
         label = 'Í gangi';
-      } else if (now > end) {
-        cls = 'finished';
+      } else if (finished) {
         label = 'Lokið';
       }
-      if (cls) {
-        event.classList.add(cls);
-      }
+      event.classList.toggle('ongoing', ongoing);
+      event.classList.toggle('finished', finished);
       if (status) {
         status.textContent = label;
       }

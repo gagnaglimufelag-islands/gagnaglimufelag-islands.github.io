@@ -2,39 +2,44 @@
 layout: home
 timeline:
   - name: Hakkaraskólinn
-    start: 2026-01-01
-    end: 2026-08-01
+    start: 2026-11-01
+    end: 2027-05-01
     description: |
                   [Hakkaraskólinn](https://skoli.ggc.tf) er opinn öllum!
 
-                  Þeir þátttakendur sem ná 1.000 stigum og eru 25 ára eða yngri
+                  Þeim þátttakendum sem ná 1.000 stigum og eru 25 ára eða yngri
                   verður boðið að taka þátt í landskeppninni.
 
-  - name: <del>Landskeppni</del>
-    start: 2026-08-08
-    end: 2026-08-08
+  - name: Landskeppni
+    start: 2027-05-01
+    end: 2027-05-31
+    date_label: maí
     description: |
-                  Landskeppninni hefur verið aflýst í ár, en þeim sem hafa
-                  áhuga á að koma í keppnishóp Íslands er bent á að hafa
-                  samband við <ggfi@ggfi.is>.
+                  Í landskeppninni mæta keppendur á staðinn og leysa
+                  fjölbreyttar netöryggisþrautir í Gagnaglímuformi á afmörkuðum tíma
+                  og safna stigum fyrir leyst verkefni.
+                  Frammistaða í keppninni er lögð til grundvallar við val á
+                  keppnishópi Íslands fyrir ECSC.
 
+                  Nánari dagsetning og staðsetning verða auglýstar síðar.
 
   - name: Æfingar keppnishóps
-    start: 2026-08-01
-    end: 2026-10-10
+    start: 2027-05-01
+    end: 2027-09-26
+    date_label: maí – 26. sep
     description: Reglulegar æfingar verða haldnar fyrir keppnishópinn.
 
   - name: Netöryggiskeppni Evrópu (ECSC)
-    start: 2026-10-12
-    end: 2026-10-16
+    start: 2027-09-27
+    end: 2027-10-01
     description: |
                   Lið frá rúmlega 20 Evrópulöndum etja kappi í Netöryggiskeppni
                   Evrópu.
 
                   Þjálfarar velja 10 einstaklinga úr keppnishópnum til að taka
                   þátt fyrir Íslands hönd.
-current_year: 2026
-location: Bochum, Þýskalandi
+location: Árósar, Danmörk
+location_in: Árósum í Danmörku
 ---
 
 Netöryggiskeppni Íslands, *Gagnaglíman*, er árlegur viðburður sem haldinn er af frumkvæði
@@ -60,17 +65,22 @@ leggja netöryggi fyrir sig að atvinnu.
 Um keppnina
 -----------
 
+{% assign quals_start = page.timeline[0].start | date: "%m" | minus: "1" %}
 {% assign quals_end = page.timeline[0].end | date: "%m" | minus: "1" %}
 {% assign ecsc_start = page.timeline[-1].start | date: "%m" | minus: "1" %}
+{% assign ecsc_end = page.timeline[-1].end | date: "%m" | minus: "1" %}
 
-Markmið keppninnar er að velja 10 manna lið til að taka þátt í ECSC {{ page.current_year }} fyrir
+Markmið keppninnar er að velja 10 manna lið til að taka þátt í ECSC {{ site.competition_year }} fyrir
 Íslands hönd. Samkvæmt reglum ECSC verða keppendur að vera 25 ára eða yngri
-(fædd {{ page.current_year | minus: 25 }} eða seinna). Netöryggiskeppnin fer fram í tveimur
-hlutum. Æfingarvettvangur sem verður opin öllum og verður aðgengilegur allan ársins hring fer í loftið 18 mars.
-Þeir þáttakendur sem ná 1000 stigum á æfingarvettvanginum fyrir {{ page.timeline[0].end | date: "%e"}}. {{ site.data.months.is_full[quals_end] }}, öðlast þáttökurétt í
+(fædd {{ site.competition_year | minus: 25 }} eða seinna). Netöryggiskeppnin fer fram í tveimur
+hlutum. Hakkaraskólinn er opinn öllum allt árið. Tímabilið fyrir ECSC {{ site.competition_year }}
+stendur frá {{ page.timeline[0].start | date: "%e" | strip }}. {{ site.data.months.is_full[quals_start] }} {{ page.timeline[0].start | date: "%Y" }}
+til {{ page.timeline[0].end | date: "%e" | strip }}. {{ site.data.months.is_full[quals_end] }} {{ page.timeline[0].end | date: "%Y" }}.
+Þeir þátttakendur sem ná 1.000 stigum á æfingarvettvanginum fyrir {{ page.timeline[0].end | date: "%e" | strip }}. {{ site.data.months.is_full[quals_end] }} öðlast þátttökurétt í
 landskeppninni, sem haldin verður í maí. Frammistaða keppenda í landskeppninni verður svo lögð til
-grundvallar þess að velja 10 manna hóp til að taka þátt í ECSC {{ page.current_year }} sem
-haldin verður í {{ site.data.months.is_full[ecsc_start] }} í {{ page.location }}.
+grundvallar þess að velja 10 manna hóp til að taka þátt í ECSC {{ site.competition_year }}, sem
+haldin verður frá {{ page.timeline[-1].start | date: "%e" | strip }}. {{ site.data.months.is_full[ecsc_start] }}
+til {{ page.timeline[-1].end | date: "%e" | strip }}. {{ site.data.months.is_full[ecsc_end] }} í {{ page.location_in }}.
 
 Bæði æfingarvettvangurinn og landskeppnin verða í hefðbundnu *jeopardy style* CTF (capture the flag) formi.
 
