@@ -190,7 +190,7 @@ p {
   }
 }
 
-// Give prose room to breathe without changing compact cards or navigation.
+// Match paragraph spacing and line height on ggfi.is.
 .post-content,
 .home-content-card,
 .tl-content {
@@ -198,7 +198,7 @@ p {
   ul,
   ol {
     line-height: 1.8;
-    margin-bottom: 1.5em;
+    margin-bottom: calc($spacing-unit / 2);
   }
 
   > :last-child {
