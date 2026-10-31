@@ -21,7 +21,7 @@ layout: default
       <div class="hero-stats" aria-label="Helstu upplýsingar">
         <div>
           <strong>10</strong>
-          <span>í lokalið Íslands</span>
+          <span>í landsliði Íslands</span>
         </div>
         <div>
           <strong>25</strong>
@@ -97,7 +97,7 @@ layout: default
       <p>Þú þarft ekki fyrri reynslu. Forvitni, þolinmæði og áhugi duga til að byrja.</p>
     </article>
     <article class="quick-card">
-      <span class="card-label">Praktísk færni</span>
+      <span class="card-label">Hagnýt færni</span>
       <h2>Raunhæfar þrautir</h2>
       <p>Verkefnin byggja á CTF-formi og snerta vefi, dulkóðun, greiningu gagna og OSINT.</p>
     </article>
@@ -114,7 +114,7 @@ layout: default
 
   <section class="timeline-section" aria-labelledby="timeline-title">
     <div class="section-heading">
-      <h1 id="timeline-title">Framkvæmd keppninnar</h1>
+      <h2 id="timeline-title">Framkvæmd keppninnar</h2>
       <p>Frá fyrstu þrautum í Hakkaraskólanum yfir í æfingar og loks Netöryggiskeppni Evrópu.</p>
     </div>
 
@@ -130,7 +130,7 @@ layout: default
           {% assign end_year = event.end | date: "%Y" %}
           <span>{{ event.start | date: "%e." }} {{ site.data.months.is[start_month] }}{% if start_year != end_year %} {{ start_year }}{% endif %}</span>
           {% if event.start != event.end %}
-          -
+          –
           {% assign end_month = event.end | date: "%m" | minus: "1" %}
           <span>{{ event.end | date: "%e." }} {{ site.data.months.is[end_month] }}{% if start_year != end_year %} {{ end_year }}{% endif %}</span>
           {% endif %}
@@ -152,7 +152,7 @@ layout: default
 
   <section class="gallery-section" aria-labelledby="gallery-title">
     <div class="section-heading">
-      <h1 id="gallery-title">Svipmyndir úr fyrri keppnum</h1>
+      <h2 id="gallery-title">Svipmyndir úr fyrri keppnum</h2>
     </div>
     <div class="gallery-grid">
       <img src="{{ "assets/images/2020/IMG_3727-thumb.jpg" | relative_url }}" alt="Keppendur í Gagnaglímunni 2020">

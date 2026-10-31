@@ -190,6 +190,22 @@ p {
   }
 }
 
+// Give prose room to breathe without changing compact cards or navigation.
+.post-content,
+.home-content-card,
+.tl-content {
+  p,
+  ul,
+  ol {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 figure > img {
   display: block;
 }

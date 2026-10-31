@@ -5,4 +5,5 @@ title: Eldri keppnir
 permalink: /past_editions/
 ---
 
-Hér er að finna upplýsingar um úrslit og þáttakendur í keppnum fyrri ára, ásamt myndum frá keppnunum.
+Hér má finna upplýsingar um úrslit og þátttakendur í keppnum fyrri ára,
+ásamt myndum frá keppnunum.

@@ -5,58 +5,54 @@ permalink: /getting_started/
 order: 1
 ---
 
-### Hvað er CTF?
+## Hvað er CTF?
 
-CTF er skammstöfun sem stendur fyrir *Capture the Flag*. CTF keppnir
-snúast um það að leysa verkefni þar sem markmiðið er að finna falin
-*flögg* (stuttur textabútur) sem sannar það að verkefnið hafi verið
-leyst. Verkefnin geta verið mjög fjölbreytt, en eiga það flest
-sameiginlegt að tengjast tölvuöryggi á einhvern hátt. Dæmi um verkefni
-eru t.d.
+CTF er skammstöfun fyrir *capture the flag*. Í CTF-keppnum leysa
+þátttakendur verkefni þar sem markmiðið er að finna falin *flögg*:
+stutta textabúta sem sanna að verkefnin hafi verið leyst. Verkefnin eru
+fjölbreytt en eiga það sameiginlegt að tengjast tölvuöryggi. Þau geta
+meðal annars falist í því að:
 
-* Brjóta gallaða eða veika dulkóðun (*crypto*)
-* Misnota þekkta veikleika í vefkerfum (*web*)
-* Leita eftir ummerkjum um óeðlilega hegðun í miklu magni gagna (*forensics*)
-* Leita eftir viðkæmum upplýsingum sem óvart hafa endað á Netinu (*OSINT*/*Open-source intelligence*)
+* brjóta gallaða eða veika dulkóðun (*crypto*),
+* nýta þekkta veikleika í vefkerfum (*web*),
+* leita að ummerkjum um óeðlilega hegðun í miklu magni gagna (*forensics*),
+* leita að viðkvæmum upplýsingum sem hafa óvart ratað á netið
+  (*OSINT, open-source intelligence*).
 
+## Er CTF fyrir mig?
 
-### Er CTF fyrir mig?
+Hefurðu gaman af þrautum, ráðgátum eða flóttaleikjum (e. *escape rooms*)?
+Hefurðu áhuga á því hvernig hlutirnir virka undir yfirborðinu? Ef svarið
+við einhverri þessara spurninga er „já“ er líklegt að þú hafir gaman af
+CTF-keppnum. Eina leiðin til að komast að því fyrir víst er þó að prófa!
 
-Hefur þú gaman af því að leysa þrautir eða ráðgátur? Finnst þér, t.d.,
-gaman að taka þátt í flóttaleikjum (e. *escape rooms*). Ert þú
-áhugasamur/áhugasöm um hvernig hlutirnir virka undir yfirborðinu? Ef
-svarið við einhverjum þessara spurninga er „já“, þá er líklegt að þú
-hafir gaman af CTF keppnum. Það er þó bara ein leið til að svara þeirri
-spurningu fyrir víst, það er að prófa!
-
-### En er þetta ekki bara fyrir gáfað fólk?
+## En er þetta ekki bara fyrir gáfað fólk?
 
 Alls ekki! Það fæðist enginn smiður, fiðluleikari eða stærðfræðingur.
-Færni er ekki meðfædd, heldur er afrakstur mikillar þjálfunar. Þó að það
-sé vissulega þannig að sumir hlutir liggi betur fyrir ákveðnum
-einstaklingum en öðrum, þá þýðir það ekki að það sé tilgangslaust að læra
-eitthvað sem liggur ekki vel fyrir manni.
+Færni byggist upp með námi og þjálfun. Þótt sumt liggi betur fyrir
+ákveðnum einstaklingum en öðrum þýðir það ekki að tilgangslaust sé að
+læra eitthvað sem reynist erfitt í fyrstu.
 
-Langflestir geta byggt upp færni, á hvaða sviði sem er, með þjálfun. Það
-eina sem þarf er áhugi. Þannig ef þú ert forvitin(n) eða
-áhugasmur/áhugasöm þá skaltu ekki hika við að prófa!
+Langflestir geta byggt upp færni með þjálfun. Það eina sem þarf er áhugi.
+Ef þú hefur áhuga og ert til í að prófa skaltu því ekki hika við að byrja!
 
-### Af hverju að taka þátt?
+## Af hverju að taka þátt?
 
-Fyrst og fremst af því CTF keppnir eru ótrúlega skemmtilegar! En, þar að
-auki þá kemur þú til með að læra og öðlast færni á mörgum sviðum. Þessi
-þekking mun nýtast þér í nánast öllu sem þú munt taka þér fyrir hendur í
-framtíðinni, sérstaklega ef þú ert að íhuga nám eða vinnu sem tengist
-tölvuöryggi eða tölvunarfræði.
+Fyrst og fremst vegna þess að CTF-keppnir eru skemmtilegar! Þar að auki
+færðu tækifæri til að læra og öðlast færni á mörgum sviðum. Þekkingin
+nýtist í fjölbreyttum verkefnum, sérstaklega ef þú ert að íhuga nám eða
+vinnu sem tengist tölvuöryggi eða tölvunarfræði.
 
+## Hverjir mega taka þátt?
 
-### Hverjir mega taka þátt?
+Til að geta tekið þátt í landskeppni Gagnaglímunnar og keppt fyrir Íslands
+hönd í Netöryggiskeppni Evrópu {{ site.competition_year }} þurfa þátttakendur
+að vera **íslenskir ríkisborgarar** og **25 ára eða yngri** við lok
+keppnisársins, þ.e. fæddir árið {{ site.competition_year | minus: 25 }} eða síðar.
 
-Til að teljast gjaldgengur til þátttöku í Landskeppni Gagnaglímunnar og sem fulltrúi Íslands í Netöryggiskeppni Evrópu {{ site.competition_year }} þarf þátttakandi að vera **íslenskur ríkisborgari** og **ekki eldri en 25 ára** (miðað við síðasta dag keppnisársins, þ.e. fæddur á árinu {{ site.competition_year | minus: 25 }} eða seinna).
+Hakkaraskólinn er opinn öllum, óháð aldri og þjóðerni, en aðeins gjaldgengir
+þátttakendur fá boð í landskeppnina.
 
-Hakkaraskólinn er opinn öllum, óháð aldri og þjóðerni, en aðeins gjaldgengir þátttakendur fá boð í Landskeppnina.
-
-
-### Allt í lagi, þetta hljómar áhugavert, en hvernig byrja ég?
+## Allt í lagi, þetta hljómar áhugavert, en hvernig byrja ég?
 
 Þá er [Hakkaraskólinn]({% link hakkaraskolinn.md %}) fyrir þig!

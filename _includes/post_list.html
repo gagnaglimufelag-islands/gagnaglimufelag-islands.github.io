@@ -6,14 +6,14 @@
   {%- endif -%}
   <div class="post-list">
     {%- for post in posts -%}
-      <div class="post-card" href="">
+      <div class="post-card">
         <div class="news-title">
-          <h1>
+          <h2>
             {{ post.title | escape }}
             <a href="{{ post.url | relative_url }}">
               #
             </a>
-          </h1>
+          </h2>
           <div class="post-date">{{ post.date | date :"%d/%m/%Y"  }}</div>
         </div>
         <div class="post-excerpt">
@@ -21,7 +21,7 @@
         </div>
         {% if post.content contains site.excerpt_separator %}
         <a href="{{ post.url | relative_url }}">
-          Nánar...
+          Nánar…
         </a>
         {% endif %}
       </div>

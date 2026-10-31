@@ -147,7 +147,7 @@ layout: default
         {% if image.path contains "-thumb" %}
         <div class="image">
           <a rel="gallery-1" href="{{ image.path | remove_first: "-thumb" | relative_url }}" class="swipebox">
-              <img src="{{ image.path | relative_url }}" alt="Mynd frá {{ page.title }} {{ page.year }}" />
+              <img src="{{ image.path | relative_url }}" alt="Keppnismynd frá árinu {{ page.year }}" />
           </a>
         </div>
         {% endif %}

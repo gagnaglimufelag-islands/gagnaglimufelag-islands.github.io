@@ -28,7 +28,7 @@
 
 .edition-archive-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 16px;
   margin: 25px 0 0;
 }
@@ -119,6 +119,19 @@
     font-size: 1.02rem;
     line-height: 1.25;
   }
+
+  @include media-query($on-mobile) {
+    grid-template-columns: 72px minmax(0, 1fr);
+
+    dl > div {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+
+    dd {
+      text-align: left;
+    }
+  }
 }
 
 .post.past-edition {
@@ -172,7 +185,7 @@
 
 .edition-stats {
   display: grid;
-  grid-template-columns: minmax(140px, .75fr) minmax(240px, 1.55fr);
+  grid-template-columns: minmax(100px, .75fr) minmax(0, 1.55fr);
   gap: 10px;
   margin: 0;
 
@@ -214,7 +227,7 @@
 .post.past-edition {
   .winners {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 16px;
 
     .winner-list {
@@ -276,6 +289,20 @@
         white-space: nowrap;
       }
 
+      @include media-query($on-mobile) {
+        padding: 16px;
+
+        .placement {
+          grid-template-columns: 1.8rem minmax(0, 1fr);
+          padding: 10px 4px;
+        }
+
+        .placement-points {
+          grid-column: 2;
+          text-align: left;
+        }
+      }
+
       .award {
         margin-bottom: 12px;
         padding-top: 12px;
@@ -309,7 +336,7 @@
 
   .participants {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 16px;
 
     .participant-list {
@@ -426,7 +453,7 @@
 
   .organizer-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 12px;
 
     .organizer-item {
