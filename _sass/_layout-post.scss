@@ -82,10 +82,10 @@ article, .comments, .box {
     gap: .55rem;
     min-height: 46px;
     padding: .75rem 1rem;
-    border: 1px solid var(--ggfi-color-primary);
+    border: 1px solid #1f5c4d;
     border-radius: 999px;
-    color: white;
-    background-color: var(--ggfi-color-primary);
+    color: #fff;
+    background-color: #1f5c4d;
     font-size: .98rem;
     font-weight: 800;
     line-height: 1.1;
@@ -99,8 +99,8 @@ article, .comments, .box {
     }
 
     &:hover {
-      color: white;
-      background: var(--ggfi-color-primary-strong);
+      color: #fff;
+      background: #164338;
       text-decoration: none;
     }
   }
@@ -115,13 +115,5 @@ article, .comments, .box {
 @media (prefers-color-scheme: dark) {
   .post-content h2 {
     color: var(--ggfi-color-primary);
-  }
-
-  .hero-button-wrapper .hero-button {
-    color: #08110e;
-
-    &:hover {
-      color: #08110e;
-    }
   }
 }

@@ -4,14 +4,35 @@ layout: default
 
 <div class="home past-editions-home">
 
+  {% assign past = site.past_editions | sort: "year" | reverse %}
+  {% assign total_participations = 0 %}
+  {% for past_edition in past %}
+    {% assign younger_count = past_edition.younger | size %}
+    {% assign older_count = past_edition.older | size %}
+    {% assign total_participations = total_participations | plus: younger_count | plus: older_count %}
+  {% endfor %}
+  {% assign latest_edition = past | first %}
+  {% assign earliest_edition = past | last %}
+
   <header class="archive-hero">
-    <p class="archive-kicker">Saga Gagnaglímunnar</p>
-    <h1>{{ page.title | escape }}</h1>
-    {{ content }}
+    <div class="archive-intro">
+      <span class="eyebrow">Gagnaglímur fyrri ára</span>
+      <h1>{{ page.hero_title | default: page.title | escape }}</h1>
+      {{ content }}
+    </div>
+    <aside class="archive-summary" aria-labelledby="archive-summary-title">
+      {% if past.size > 0 %}
+      <span class="archive-summary-period">{{ earliest_edition.year }}–{{ latest_edition.year }}</span>
+      {% endif %}
+      <h2 id="archive-summary-title">Keppnissagan í tölum</h2>
+      <dl class="archive-summary-stats">
+        <div><dt>Keppnir</dt><dd>{{ past.size }}</dd></div>
+        <div><dt>Þátttökur</dt><dd>{{ total_participations }}</dd></div>
+      </dl>
+    </aside>
   </header>
 
   <div class="edition-archive-grid">
-    {% assign past=site.past_editions | sort:"year" | reverse %}
     {%- for past_edition in past -%}
       {% assign participant_count = 0 %}
       {% if past_edition.younger %}

@@ -1,0 +1,196 @@
+// Uppsetning síðunnar. Útlit kassa, takka, pilla og númera kemur úr sameiginlega þemanu.
+.getting-started {
+  [hidden] { display: none; }
+
+  section[id],
+  details[id],
+  h2[id] { scroll-margin-top: 168px; }
+
+  .gs-symbols { display: block; }
+
+  .gs-icon {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .hero-lead > :last-child,
+  .program-card > :last-child,
+  .quick-card > :last-child { margin-bottom: 0; }
+
+  // Sama kaflavalmynd og í ggfi-prufuútgáfunni, undir 72 px aðalvalmyndinni.
+  .gs-page-nav {
+    position: sticky;
+    top: 84px;
+    z-index: 10;
+    display: flex;
+    gap: 6px;
+    max-width: 100%;
+    margin-top: 24px;
+    padding: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border: 1px solid var(--ggfi-color-border);
+    border-radius: 999px;
+    background: var(--ggfi-color-surface);
+    box-shadow: var(--ggfi-shadow-sm);
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      min-height: 40px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { background: var(--ggfi-color-primary-soft); }
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  .gs-school-facts {
+    margin: 24px 0 0;
+
+    > div {
+      display: grid;
+      grid-template-columns: 90px minmax(0, 1fr);
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--ggfi-color-border);
+    }
+
+    > div:last-child { padding-bottom: 0; }
+    dt { color: var(--ggfi-color-ink-muted); }
+    dd { margin: 0; font-weight: 800; }
+    a { overflow-wrap: anywhere; }
+  }
+
+  .gs-definition,
+  .gs-demo-grid,
+  .gs-eligibility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+  }
+
+  .gs-definition { align-items: center; }
+  .gs-definition-copy,
+  .gs-submit-card { min-width: 0; }
+
+  .gs-flag-note {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--ggfi-color-border);
+
+    span { display: block; margin-bottom: 8px; color: var(--ggfi-color-ink-muted); font-size: .9rem; }
+  }
+
+  .gs-topic-grid > :last-child { grid-column: span 2; }
+  .gs-topic-grid .challenge-topic-icon { margin-bottom: 20px; }
+  .gs-topic-grid h3 { margin-bottom: 8px; font-size: 1.35rem; }
+
+  .gs-check-list {
+    display: grid;
+    gap: 14px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li { display: flex; align-items: start; gap: 12px; padding: 0; }
+    .gs-icon { width: 20px; height: 20px; margin-top: 4px; color: var(--ggfi-color-primary-strong); }
+  }
+
+  .gs-note,
+  .gs-demo-footnote {
+    margin: 24px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--ggfi-color-border);
+    font-size: .9rem;
+  }
+
+  // Ný virkni: svarreitur þrautarinnar, með letri og litum úr þemanu.
+  button,
+  input { font-family: inherit; font-size: inherit; line-height: inherit; }
+
+  label { display: block; margin-bottom: 8px; font-weight: 800; }
+
+  input {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid var(--ggfi-color-border);
+    border-radius: var(--ggfi-radius-md);
+    color: var(--ggfi-color-ink);
+    background: var(--ggfi-color-mist);
+    font-family: $code-font-family;
+  }
+
+  input[aria-invalid="true"] { border-color: var(--ggfi-color-danger); }
+
+  .gs-scoreline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--ggfi-color-border);
+    color: var(--ggfi-color-ink-muted);
+  }
+
+  .gs-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ggfi-color-primary-strong);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .gs-field-help { margin: 12px 0 20px; font-size: .9rem; }
+  .gs-feedback { min-height: 1.8em; margin-top: 16px; }
+  .gs-feedback[data-state="success"] { color: var(--ggfi-color-success); font-weight: 800; }
+  .gs-feedback[data-state="error"] { color: var(--ggfi-color-danger); }
+
+  .challenge-demo details + details { margin-top: 12px; }
+
+  .gs-faq-list {
+    border-top: 1px solid var(--ggfi-color-border);
+
+    details { padding: 20px 0; border-bottom: 1px solid var(--ggfi-color-border); }
+    summary { min-height: 44px; cursor: pointer; font-weight: 800; }
+    details[open] summary { color: var(--ggfi-color-primary-strong); }
+    details > p { max-width: 74ch; margin: 16px 0 0; }
+  }
+
+  .gs-start-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    li > div { min-width: 0; }
+  }
+
+  @include media-query($on-laptop) {
+    .gs-definition,
+    .gs-demo-grid,
+    .gs-eligibility-grid,
+    .gs-start-steps { grid-template-columns: 1fr; }
+
+    .gs-topic-grid > :last-child { grid-column: auto; }
+  }
+
+  @include media-query($on-mobile) {
+    .gs-page-nav a { padding: 8px 12px; font-size: .75rem; }
+    .gs-school-facts > div { grid-template-columns: 1fr; gap: 4px; }
+  }
+}

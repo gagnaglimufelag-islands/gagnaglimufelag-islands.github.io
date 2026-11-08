@@ -21,7 +21,8 @@
 title: Gagnaglíman
 lang: is
 competition_year: 2027
-email: 10an@10an.is
+sponsor_year: 2026
+email: ggfi@ggfi.is
 description: Netöryggiskeppni Íslands
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -49,6 +50,7 @@ social:
     twitter: gagnagliman
     facebook: gagnagliman
     discord: https://discord.gg/WetUTgRczH
+    linkedin: https://www.linkedin.com/company/ggfi/
 
 collections:
     past_editions:
@@ -77,3 +79,6 @@ exclude:
   - vendor/ruby/
   - '*.sh'
   - README.md
+  - flake.nix
+  - flake.lock
+  - gemset.nix

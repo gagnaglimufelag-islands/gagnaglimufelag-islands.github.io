@@ -1,0 +1,17 @@
+.school-page {
+  .school-hero { grid-template-columns: minmax(0, 1fr) 160px; }
+  .hero-lead > :last-child,
+  .hero-actions,
+  .home-content-card > :last-child { margin-bottom: 0; }
+
+  .school-mark img { display: block; width: 100%; height: auto; }
+
+  @include media-query($on-laptop) {
+    .school-hero { grid-template-columns: 1fr; }
+    .school-mark { display: none; }
+  }
+
+  @include media-query($on-mobile) {
+    .hero-actions .button { width: 100%; }
+  }
+}

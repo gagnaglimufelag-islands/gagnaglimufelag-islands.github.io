@@ -9,7 +9,7 @@ layout: default
   <section class="home-hero" aria-labelledby="home-hero-title">
     <div class="hero-copy">
       <p class="eyebrow">Netöryggiskeppni Íslands · {{ site.competition_year }}</p>
-      <h1 id="home-hero-title">Lærðu netöryggi<br>Kepptu fyrir Ísland</h1>
+      <h1 id="home-hero-title">Lærðu að hakka</h1>
       <p class="hero-lead">
         Gagnaglíman er árleg netöryggiskeppni fyrir forvitna, staðfasta og
         skapandi einstaklinga sem vilja byggja upp hagnýta tæknifærni.
@@ -48,14 +48,14 @@ layout: default
             <span>01</span>
             <div>
               <strong>Hakkaraskólinn</strong>
-              <small>Æfingar og forkeppni</small>
+              <small>Lærdómur og æfingar</small>
             </div>
           </li>
           <li>
             <span>02</span>
             <div>
               <strong>Landskeppnin</strong>
-              <small>Bestu keppendur mætast</small>
+              <small>Áhugasamir keppendur mætast</small>
             </div>
           </li>
           <li>
@@ -99,17 +99,13 @@ layout: default
     <article class="quick-card">
       <span class="card-label">Hagnýt færni</span>
       <h2>Raunhæfar þrautir</h2>
-      <p>Verkefnin byggja á CTF-formi og snerta vefi, dulkóðun, greiningu gagna og OSINT.</p>
+      <p>Verkefnin eru fjölbreytt og snerta veföryggi, dulkóðun, greiningu gagna og margt fleira.</p>
     </article>
     <article class="quick-card">
       <span class="card-label">Tækifæri</span>
       <h2>Leið í landsliðið</h2>
       <p>Sterk frammistaða getur opnað leið inn í keppnishóp Íslands fyrir ECSC.</p>
     </article>
-  </section>
-
-  <section class="home-content-card">
-    {{ content }}
   </section>
 
   <section class="timeline-section" aria-labelledby="timeline-title">
@@ -150,12 +146,14 @@ layout: default
     </div>
   </section>
 
+  {% include home_challenges.html %}
+
   <section class="gallery-section" aria-labelledby="gallery-title">
     <div class="section-heading">
       <h2 id="gallery-title">Svipmyndir úr fyrri keppnum</h2>
     </div>
     <div class="gallery-grid">
-      <img src="{{ "assets/images/2020/IMG_3727-thumb.jpg" | relative_url }}" alt="Keppendur í Gagnaglímunni 2020">
+      <img src="{{ "assets/images/2020/IMG_3727-thumb.jpg" | relative_url }}" alt="Keppendur í Gagnaglímunni 2020" width="500" height="333" loading="lazy" decoding="async">
       <img src="{{ "assets/images/2022/1003388-thumb.jpg" | relative_url }}" alt="Viðburður Gagnaglímunnar 2022">
       <img src="{{ "assets/images/2023/000-6-thumb.jpg" | relative_url }}" alt="Gagnaglíman 2023">
       <img src="{{ "assets/images/2024/20240525-DSC01652-final-thumb.jpg" | relative_url }}" alt="Verðlaunaafhending Gagnaglímunnar 2024">

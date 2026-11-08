@@ -1,0 +1,61 @@
+<section class="home-content-card" aria-labelledby="challenges-title">
+  <div class="section-heading">
+    <h2 id="challenges-title">Hvernig virka gagnaglímur?</h2>
+    {{ content }}
+  </div>
+
+  <div class="challenge-layout">
+    <div class="challenge-categories">
+      <h3 id="challenge-categories-title">Hvers konar verkefni?</h3>
+      <ul class="challenge-topics" aria-labelledby="challenge-categories-title">
+        <li>
+          <span class="challenge-topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M10 13l-3 2 3 2M14 13l3 2-3 2"/></svg>
+          </span>
+          <div><h4>Veföryggi</h4><p>Finndu glufur í því hvernig vefur verndar aðgang og upplýsingar.</p></div>
+        </li>
+        <li>
+          <span class="challenge-topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 15v2"/></svg>
+          </span>
+          <div><h4>Dulkóðun</h4><p>Ráðu leyniskilaboð og finndu veikleika í dulkóðuninni.</p></div>
+        </li>
+        <li>
+          <span class="challenge-topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 6 6M7 8h6M7 11h4"/></svg>
+          </span>
+          <div><h4>Greining gagna</h4><p>Leitaðu að vísbendingum í skrám, myndum og netumferð.</p></div>
+        </li>
+        <li>
+          <span class="challenge-topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14M4 5h4M4 5v4M20 19h-4M20 19v-4"/></svg>
+          </span>
+          <div><h4>Bakhönnun</h4><p>Finndu út hvernig forrit virkar án þess að hafa upprunalega kóðann.</p></div>
+        </li>
+        <li>
+          <span class="challenge-topic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3m-13-5 4 4m0-4-4 4"/></svg>
+          </span>
+          <div><h4>Veikleikar í forritum</h4><p>Finndu forritunarvillur sem fá forrit til að gera eitthvað óvænt.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <aside class="challenge-demo" aria-labelledby="challenge-demo-title">
+      <span class="challenge-demo-label">Prófaðu dulkóðun</span>
+      <h3 id="challenge-demo-title">Hvaða orð leynist hér?</h3>
+      <code class="challenge-code">HBHOBHMJNBO</code>
+      <p>Hver stafur hefur færst um eitt sæti fram í enska stafrófinu (A–Z). Geturðu fært þá til baka?</p>
+      <details>
+        <summary>Sjá lausnina</summary>
+        <p>H verður G, B verður A og svo framvegis. Útkoman er <code>GAGNAGLIMAN</code>!</p>
+      </details>
+    </aside>
+  </div>
+
+  <div class="hero-actions">
+    <a class="button button-primary" href="https://{{ site.data.status.qualifiers.domain }}">Prófa Hakkaraskólann <span aria-hidden="true">↗</span></a>
+    <a class="button button-secondary" href="{{ '/getting_started/' | relative_url }}">Þátttökuskilyrði og fyrstu skref <span aria-hidden="true">→</span></a>
+  </div>
+  <p class="challenge-organizer">Gagnaglíman er á vegum <a href="https://ggfi.is/">Gagnaglímufélags Íslands</a> og er undankeppni fyrir <a href="https://ecsc.eu/">Netöryggiskeppni Evrópu</a>.</p>
+</section>
