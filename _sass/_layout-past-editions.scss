@@ -271,6 +271,75 @@
   }
 }
 
+.edition-overview-card {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--ggfi-color-border);
+  border-radius: var(--ggfi-radius-lg);
+  background: var(--ggfi-color-mist);
+  box-shadow: var(--ggfi-shadow-sm);
+}
+
+.edition-overview-note {
+  margin-bottom: 20px;
+  color: var(--ggfi-color-ink-muted);
+}
+
+.edition-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 32px;
+  margin: 0;
+
+  > div {
+    min-width: 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--ggfi-color-border);
+  }
+
+  dt {
+    margin-bottom: 6px;
+    color: var(--ggfi-color-primary-strong);
+    font-size: .85rem;
+    font-weight: 800;
+  }
+
+  dd {
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  @include media-query($on-mobile) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.edition-overview-detail {
+  display: block;
+  color: var(--ggfi-color-ink-muted);
+}
+
+.edition-overview-list {
+  margin: 0;
+  padding-left: 1.2em;
+
+  li + li { margin-top: 4px; }
+}
+
+.edition-overview-presenters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li + li { margin-top: 12px; }
+}
+
+.edition-overview-actions {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--ggfi-color-border);
+}
+
 .post.past-edition {
   .winners {
     display: grid;
@@ -598,6 +667,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .edition-overview-grid dt,
   .post.past-edition .winners .winner-list .award .award-name {
     color: var(--ggfi-color-primary);
   }

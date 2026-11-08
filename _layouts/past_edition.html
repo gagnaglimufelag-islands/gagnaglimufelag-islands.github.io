@@ -65,9 +65,15 @@ layout: default
     </dl>
   </header>
 
-  <div class="post-content e-content">
-    {{ content }}
-  </div>
+  {% if page.overview %}
+    {% include edition_overview.html %}
+  {% endif %}
+  {% assign edition_content = content | strip %}
+  {% if edition_content != '' %}
+    <div class="post-content e-content">
+      {{ content }}
+    </div>
+  {% endif %}
 
   {%- if page.results -%}
     <h2>Sigurvegarar</h2>

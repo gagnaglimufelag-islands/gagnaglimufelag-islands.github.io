@@ -1,0 +1,81 @@
+<section class="edition-overview e-content" aria-labelledby="edition-overview-title">
+  <h2 id="edition-overview-title">Keppnin í stuttu máli</h2>
+  <div class="edition-overview-card">
+    {% if page.overview.note %}
+      <p class="edition-overview-note">{{ page.overview.note | escape }}</p>
+    {% endif %}
+    <dl class="edition-overview-grid">
+      <div>
+        <dt>Dagsetning</dt>
+        <dd>
+          {{ page.overview.date | escape }}
+          {% if page.overview.time %}
+            <span class="edition-overview-detail">Kl. {{ page.overview.time | escape }}</span>
+          {% endif %}
+        </dd>
+      </div>
+      <div>
+        <dt>Keppnisstaður</dt>
+        <dd>{{ page.location | escape }}</dd>
+      </div>
+      {% if participant_count > 0 %}
+      <div>
+        <dt>Þátttaka</dt>
+        <dd>
+          {{ participant_count }} keppendur
+          <ul class="edition-overview-list">
+            {% if page.younger %}
+              <li>{{ page.younger.size }} í yngri flokki ({{ page.overview.age_groups.younger | escape }})</li>
+            {% endif %}
+            {% if page.older %}
+              <li>{{ page.older.size }} í eldri flokki ({{ page.overview.age_groups.older | escape }})</li>
+            {% endif %}
+          </ul>
+        </dd>
+      </div>
+      {% endif %}
+      {% if page.overview.qualification %}
+      <div>
+        <dt>{{ page.overview.qualification.label | escape }}</dt>
+        <dd>{{ page.overview.qualification.description | escape }}</dd>
+      </div>
+      {% endif %}
+      {% if page.overview.awards %}
+      <div>
+        <dt>Verðlaun</dt>
+        <dd>
+          <ul class="edition-overview-list">
+            {% for award in page.overview.awards %}
+              <li>{{ award | escape }}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
+      {% endif %}
+      {% if page.overview.presenters %}
+      <div>
+        <dt>Afhending verðlauna</dt>
+        <dd>
+          <ul class="edition-overview-presenters">
+            {% for presenter in page.overview.presenters %}
+            <li>
+              <strong>{{ presenter.name | escape }}</strong>
+              <span class="edition-overview-detail">{{ presenter.role | escape }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
+      {% endif %}
+    </dl>
+    {% if page.overview.results_url %}
+    <div class="edition-overview-actions">
+      {% assign results_url = page.overview.results_url %}
+      {% unless results_url contains '://' %}
+        {% assign results_url = results_url | relative_url %}
+      {% endunless %}
+      <a class="button button-primary" href="{{ results_url | escape }}">Sjá ítarleg úrslit</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
