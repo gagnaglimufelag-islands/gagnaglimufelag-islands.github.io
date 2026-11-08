@@ -210,13 +210,13 @@ layout: default
   <nav class="edition-nav" aria-label="Fletta milli eldri keppna">
     {% if previous_edition %}
     <a class="edition-nav-link" href="{{ previous_edition.url | relative_url }}">
-      <span>← Fyrri keppni</span>
+      <span>Fyrri keppni</span>
       <strong>{{ previous_edition.title }} {{ previous_edition.year }}</strong>
     </a>
     {% endif %}
     {% if next_edition %}
     <a class="edition-nav-link next" href="{{ next_edition.url | relative_url }}">
-      <span>Næsta keppni →</span>
+      <span>Næsta keppni</span>
       <strong>{{ next_edition.title }} {{ next_edition.year }}</strong>
     </a>
     {% endif %}

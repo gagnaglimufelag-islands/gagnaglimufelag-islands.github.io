@@ -92,12 +92,6 @@ article, .comments, .box {
     text-decoration: none;
     box-shadow: var(--ggfi-shadow-sm);
 
-    &::after {
-      content: "↗";
-      font-size: .95em;
-      line-height: 1;
-    }
-
     &:hover {
       color: #fff;
       background: #164338;
